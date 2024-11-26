@@ -1,6 +1,6 @@
 import * as THREE from "three";
     
-const img_base = "Assets/HeroColorOne.png";
+const img_base = "assets/HeroColor.png";
 
 let camera, scene, renderer, skybox;
 let height = 0;
