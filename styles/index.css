@@ -1,0 +1,59 @@
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  canvas {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    background: transparent;
+  }
+  .Hero h1 {
+    z-index: 1;
+    font-size: 2rem;
+  }
+
+  .Presentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    background: transparent;
+  }
+
+  .Overview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    background: #faf9f6;
+  }
+
+  .CTA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    background: #faf9f6;
+  }
+
