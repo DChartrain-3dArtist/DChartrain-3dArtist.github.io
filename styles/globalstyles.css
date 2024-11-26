@@ -1,3 +1,373 @@
-body{
+/* --- Global Css Parameter --- */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #faf9f6;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
+}
+
+/* --- Menu Css Parameter --- */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -340px;
+    width: 350px;
+    height: 100%;
+    color: #faf9f6;
+    overflow-y: auto;
+    padding: 10px 0px 10px 10px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+    background: linear-gradient(35deg, rgba(42,42,74,1) 0%, rgba(74,74,133,1) 98%);
+    border-top-right-radius: 40px;
+    box-shadow: 15px 0px 15px -8px #2a2a4a;
+    border-bottom-right-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #4a4a4a;
+    padding-bottom: 10px;
+    margin-top: 20%;
+    margin-right: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 40px;
+}
+
+.sidebar ul li {
+    margin: 3% 0;
+}
+
+.sidebar ul li a {
+    color: #faf9f6;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 10px 10px 25px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;            
+    -webkit-tap-highlight-color:transparent;
+    letter-spacing: 1px;
+    transition: letter-spacing 0.3s ease;
+}
+
+
+.menubtnactive {
     background-color: #4a4a4a;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.349);
+    letter-spacing: 1.5px !important;
+    font-size: 20px !important;
+}
+
+
+.sidebar ul li a:hover {
+    background-color: #faf9f6;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;            
+    color: #4a4a4a;
+    letter-spacing: 1.5px;
+}
+
+.sidebar ul li a:hover::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 0px;
+    height: 35px;
+    width: 35px;
+    border-bottom-right-radius: 18px;
+    box-shadow: 0 20px 0 0 #faf9f6;
+}
+
+.sidebar ul li a:hover::before{
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 38px;
+    right: 0px;
+    height: 35px;
+    width: 35px;
+    border-top-right-radius: 18px;
+    box-shadow: 0 -20px 0 0 #faf9f6;
+}
+
+.sidebar ul li ul {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.menu-toggle {
+    display: none; 
+}
+
+.menu-toggle-label {
+    position: fixed;
+    top: 25px;
+    left: 15px;
+    border-radius: 5px 15px 15px 5px;
+    background: #484881;
+    box-shadow: 5px 0px 10px 1px #2a2a4a;
+    color: #faf9f6;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1400;
+    transition: background-color 0.3s ease;
+}
+
+.menu-toggle-label:hover .hamburger::before,
+.menu-toggle-label:hover .hamburger::after,
+.menu-toggle-label:hover .hamburger
+{
+    background-color: #a3d1f4 ;
+}
+
+.hamburger {
+    width: 20px;
+    height: 2px;
+    background-color: #faf9f6;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #faf9f6;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.hamburger::before {
+    top: -6px;
+}
+
+.hamburger::after {
+    top: 6px;
+}
+
+.menu-toggle:checked ~ .sidebar {
+    left: 0; 
+}
+
+.menu-toggle:checked ~ .menu-toggle-label .hamburger {
+    background-color: transparent;
+}
+
+.menu-toggle:checked ~ .menu-toggle-label .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.menu-toggle:checked ~ .menu-toggle-label .hamburger::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+
+/* --- Reseaux Sociaux --- */
+
+.RsLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.separator {
+    width: 80%;
+    height: 2px;
+    background-color: #4a4a4a;
+}
+
+.RsLink p {
+    text-align: center;
+}
+
+.PanelRS
+{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px auto 0 auto;
+}
+
+.IconeGlass
+{
+    position: relative;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    background: #4a4a4a;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.349);
+    transform-style: flat;
+    transition: all 0.5s ease;
+    box-shadow: 0px 5px 20px -4px rgba(0, 0, 0, 0.91);
+    transform: translateZ(20px )
+}
+
+.IconeGlass::after
+{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 180%;
+    height: 30%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transition: all 0.5s ease;
+    transform: rotate(45deg);
+}
+
+.IconeGlass:hover, .IconeGlass.hover
+{
+    box-shadow: 0px 20px 50px -4px rgba(0, 0, 0, 0.91);
+    transform: scale(1.2) translateZ(40px) perspective(500px) rotateY(10deg) rotateX(8deg);
+}
+
+.IconeGlass:hover::after, .IconeGlass.hover::after
+{
+    top: -100%;
+    left: 100%;
+}
+
+.IconeGlass > svg
+{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+    fill: rgba(255, 255, 255, 0.45);
+}
+
+.IconeGlass:hover svg, .IconeGlass.hover svg
+{
+    fill: rgba(255, 255, 255, 0.85);
+}
+
+.IcoLDNGlass:hover, .IcoLDNGlass.hover
+{
+    background: rgb(0, 124, 181);
+}
+
+.IcoInstaGlass:hover, .IcoInstaGlass.hover
+{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+.IcoYoutubeGlass:hover, .IcoYoutubeGlass.hover
+{
+    background: rgb(255, 0, 0);
+}
+
+.IcoGithubGlass:hover, .IcoGithubGlass.hover
+{
+    background: #6e40c9;
+}
+
+
+/* --- Footer --- */
+
+footer{
+    bottom: 0;
+    background: linear-gradient(0deg, #e3d2c4, #faf9f6);
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    color: #4a4a4a;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    width: calc(80% - 15px);
+}
+
+.footer-bottom{
+    background: #313157;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+.footer-bottom p{
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: #faf9f6;
+}
+
+.footer-bottom p a{
+  color:#44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: #faf9f6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: #27bcda;
+}
+
+@media (max-width:500px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 }
