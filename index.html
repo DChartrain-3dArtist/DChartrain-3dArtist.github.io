@@ -1,7 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donovan Chartrain | Portfolio</title>
+    <link rel="stylesheet" href="styles/globalstyles.css">
+    <link rel="stylesheet" href="styles/indexstyles.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <!-- Toggle pour afficher/masquer la sidebar -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-toggle-label">
+        <span class="hamburger"></span>
+    </label>
+
+    <!-- Menu Sidebar -->
+    <nav class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Portfolio</a>
+                <ul>
+                    <li><a href="projets.html#projet1">Images de synthèse</a></li>
+                    <li><a href="projets.html#projet2">3D Interactif</a></li>
+                    <li><a href="projets.html#projet3">Développement Web</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">Compétences</a>
+                <ul>
+                    <li><a href="about.html#langages">Mon CV</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main>
+        <section class="HeroSection">
+            <div class="HeroImage">
+                <img src="assets/HeroImage.png" alt="Hero Image">
+            </div>
+            <h1>Donovan Chartrain</h1>
+            <h2>3D Designer & Web Developer</h2>
+            <p>Explorez la Puissance de la 3D et du Développement à Travers Mon Regard Unique <br> <br>
+                Bienvenue dans l'univers de l'innovation et de la création. <br><br>
+                Explorez l'avenir à travers mes projets et ma passion pour la technologie sans limites.
+            </p>
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="AboutSection">
+            <div>
+                <h2>Decouvrer Moi</h2>
+            </div>
+            <div class="AboutContent">
+                <img src="https://placehold.co/600x400" alt="">
+                <p>Je suis Donovan Chartrain, un professionnel passionné par l'innovation technologique et la créativité.
+
+                    Mon parcours m'a conduit à explorer les domaines de la 3D, du développement web et bien plus encore.
+                    
+                    Chaque projet que je touche est une occasion d'innover et de repousser les limites de ce qui est possible.</p>
+            </div>
+            <a class="button" href="about.html"> En savoir plus</a>
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="SecteurSection">
+            <div class="secteurColumn">
+                <h2>Secteurs d'activités</h2>
+                <div class="secteurTheme">
+                    <img src="https://placehold.co/600x400" alt="">
+                    <h3>3D Designer</h3>
+                    <p>Je suis un expert en conception 3D, capable de transformer des idees en realite virtuelle.</p>
+                    <a class="button" href="about.html"> En savoir plus</a>
+                </div>
+                <div class="secteurTheme">
+                    <img src="https://placehold.co/600x400" alt="">
+                    <h3>3D Developer</h3>
+                    <p>Je suis un developpeur 3D passionne, capable de creer des jeux 3D et des applications 3D.</p>
+                    <a href="#" class="button"> En savoir plus</a>
+                </div>
+                <div class="secteurTheme">
+                    <img src="https://placehold.co/600x400" alt="">
+                    <h3>Web Developer</h3>
+                    <p>Je suis un developpeur web passionne, capable de creer des sites web et des applications web.</p>
+                    <a href="#" class="button"> En savoir plus</a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
