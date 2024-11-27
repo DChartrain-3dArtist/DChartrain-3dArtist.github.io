@@ -4,26 +4,28 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
-    
+    padding: 20px 0px 20px 20px;
+    position: relative;
 }
 
 .HeroImage {
-    position: relative;
+    margin-top: 90px;
     width: 100%;
-    min-height: 40vh;
-    max-height: 80vh;
-    margin-bottom: 20px;
+    min-height: 65vh;
+    max-height: 70vh;
     background-image: url(https://dchartrain-3dartist.github.io/assets/hero.png);
-    background-size: cover;
-    background-position: center;
+    background-size: 100vh;
+    background-position: left;
+    background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items:center;
+    opacity: 80%;
 }
 
 .HeroText {
-    margin-top: 100px;
+    position: absolute;
+    top: 20%;
     width: 90%;
     max-width: 450px;
     padding: 10px;
@@ -31,23 +33,29 @@
 }
 
 .HeroText h1 {
-    font-size: 2rem;
-    font-weight: bold;
+    margin-bottom: 80px;
+    font-size: 40px;
+    letter-spacing: 7px;
+    line-height: 45px;
+    font-weight: 400;
+    text-align: left;
     text-transform: uppercase;
-    text-shadow:
-    1px 1px 8px black,
-    0 0 1em rgb(0, 0, 0),
-    0 0 0.2em rgb(0, 0, 0);
+    color: #e5b97d;
 }
 
 .HeroText h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-shadow:
-    1px 1px 8px black,
-    0 0 1em rgb(0, 0, 0),
-    0 0 0.2em rgb(0, 0, 0);
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-align: left;
+    color: #e5b97d;
+    text-transform: none;
+    line-height: 35px;
+}
+
+.HeroSection p {
+    text-align: left;
+    padding: 0px 20px;
 }
 
 
