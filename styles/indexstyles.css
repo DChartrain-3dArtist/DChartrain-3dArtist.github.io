@@ -24,7 +24,7 @@
 
 .HeroText {
     position: absolute;
-    top: 20%;
+    top: 10%;
     width: 90%;
     max-width: 450px;
     padding: 10px;
@@ -53,6 +53,8 @@
 }
 
 .HeroSection p {
+    z-index: 10;
+    margin-top: -50px;
     text-align: left;
     padding: 0px 20px;
 }
