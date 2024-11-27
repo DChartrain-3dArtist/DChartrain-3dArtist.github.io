@@ -22,10 +22,7 @@ body, html {
     overflow-y: auto;
     padding: 20px;
     box-shadow:  9px 9px 17px #090909;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
+        transition: left 0.3s ease-in-out;
     z-index: 1000;
 }
 
@@ -55,10 +52,7 @@ body, html {
     cursor: pointer;
     font-weight: bold;
     border-bottom: 2px solid transparent;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 
@@ -98,10 +92,7 @@ body, html {
     justify-content: center;
     cursor: pointer;
     z-index: 1100;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
+    transition: background-color 0.3s ease;
 }
 
 .menu-toggle-label:hover {
@@ -123,10 +114,7 @@ body, html {
     background-color: #e5b97d;
     position: absolute;
     left: 0;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
+    transition: transform 0.3s ease;
 }
 
 .hamburger::before {
@@ -144,10 +132,7 @@ main {
 	-ms-transform-origin: 100% 50%;
 	-o-transform-origin: 100% 50%;
 	transform-origin: 100% 50%;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
+    transition: all 0.3s ease;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
     box-shadow: -22px 0 15px rgba(0, 0, 0, 0.2);
@@ -169,10 +154,7 @@ main::before {
     z-index: 500;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
+    transition: opacity 0.3s ease;
 }
 
 .menu-toggle:checked ~ .sidebar {
@@ -200,10 +182,7 @@ main::before {
     font-size: 1.2rem;
     cursor: pointer;
     border-radius: 15px;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
+    transition: all 0.4s ease;
     outline: none;
     position: relative;
     overflow: hidden;
@@ -225,10 +204,7 @@ main::before {
     box-shadow:  2px 2px 7px #090909,
                 -2px -2px 7px #525252;
     transform: scale(0);
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
 .button:hover::after {
