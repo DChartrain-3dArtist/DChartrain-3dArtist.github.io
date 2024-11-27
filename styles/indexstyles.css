@@ -9,13 +9,12 @@
 }
 
 .HeroImage {
-    margin-top: 90px;
     width: 100%;
     min-height: 65vh;
     max-height: 70vh;
     background-image: url(https://dchartrain-3dartist.github.io/assets/hero.png);
     background-size: 150vh;
-    background-position: 20% 50%;
+    background-position: 20% 40%;
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-around;
