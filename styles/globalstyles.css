@@ -22,7 +22,10 @@ body, html {
     overflow-y: auto;
     padding: 20px;
     box-shadow:  9px 9px 17px #090909;
-        transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     z-index: 1000;
 }
 
@@ -53,6 +56,9 @@ body, html {
     font-weight: bold;
     border-bottom: 2px solid transparent;
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 
 
@@ -93,6 +99,9 @@ body, html {
     cursor: pointer;
     z-index: 1100;
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 
 .menu-toggle-label:hover {
@@ -115,6 +124,9 @@ body, html {
     position: absolute;
     left: 0;
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 
 .hamburger::before {
@@ -133,6 +145,9 @@ main {
 	-o-transform-origin: 100% 50%;
 	transform-origin: 100% 50%;
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
     box-shadow: -22px 0 15px rgba(0, 0, 0, 0.2);
@@ -155,6 +170,9 @@ main::before {
     opacity: 0;
     pointer-events: none;
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 
 .menu-toggle:checked ~ .sidebar {
@@ -183,6 +201,9 @@ main::before {
     cursor: pointer;
     border-radius: 15px;
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     outline: none;
     position: relative;
     overflow: hidden;
@@ -205,6 +226,9 @@ main::before {
                 -2px -2px 7px #525252;
     transform: scale(0);
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 
 .button:hover::after {
