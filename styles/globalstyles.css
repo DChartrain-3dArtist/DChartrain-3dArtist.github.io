@@ -6,7 +6,6 @@ body, html {
     font-style: normal;
     color: #bfbcb8;
     box-sizing: border-box;
-    overflow-x: hidden;
     background-color: #141414;
 }
 
@@ -208,6 +207,8 @@ main::before {
     position: relative;
     overflow: hidden;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 
 .button::after {

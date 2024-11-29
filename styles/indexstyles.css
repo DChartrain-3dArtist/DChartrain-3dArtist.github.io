@@ -69,115 +69,259 @@
     justify-content: center;
     align-items: center;
     text-align: left;
-    padding: 20px;
-    border-radius: 20px;
     min-height: 150px;
-    margin: 40px 20px;
+    margin: 40px 5px;
 }
 
-.AboutSection h2 {
-    font-size: 2rem;
+.AboutSection h3 {
+    font-size: 24px;
     font-weight: bold;
     color: #bfbcb8;
-    margin: 0;
+    margin-bottom: 10px;
     padding: 0;
     text-transform: uppercase;
+}
+.Verticalseparator {
+    width: 2px;
+    height: 130px;
+    background-color: #e5b97d;
+    margin: 0px 0px;
 }
 
 .AboutContent {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     text-align: left;
     min-height: 150px;
-    width: 100%;
-    margin: 20px
+    width: 80%;
+    margin: 5px 0px;
 }
 
-.AboutContent p {
+.AboutContent h5 {
     margin: 10px;
     font-size: 1rem;
+    color: #bfbcb8;
+    max-width: 250px;
+}
+
+.AboutContent h4 {
+    font-size: 20px;
     color: #bfbcb8;
     max-width: 250px;
 }
 
 .AboutContent img {
     object-fit: cover;
-    max-width: 50%;
     height: auto;
     margin: 10px;
-    max-width: 250px;
-    border-radius: 20px;
-    width: 95%;
+    width: 100%;
+    max-width: 30%;
+}
+
+.AboutSection p {
+    text-align: left;
+    padding: 0px 30px;
 }
 
 /* --- Secteur Section --- */
 
-.SecteurSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    min-height: 150px;
-    margin: 40px 20px;
+.SecteurSection{
+    height: 320vh;
 }
 
-.secteurColumn {
+.Secteur_Sticky{
+    position: sticky;
+    overflow: hidden;
+    top: 50px;
+    height: 90vh;
+}
+
+ .separatorsticky {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    width: 80%;
+    height: 2px;
+    background-color: #e5b97d;
+    margin-top: 20px;
+    margin: 20px auto;
+}
+
+.Secteur_Sticky h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #bfbcb8;
+    margin-bottom: 10px;    
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.SecteurScroll{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 320vw;
+    will-change: transform;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    text-align: center;
-    min-height: 150px;
-    width: 100%;
+    padding: 0 5vw;
 }
 
-.secteurColumn h2 {
-    font-size: 1.7rem;
-    font-weight: bold;
-    color: #bfbcb8;
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
+.secteurCards{
+    position: relative;
+    background: #333;
+    width: 300px;
+    height: 60vh;
+    border-radius: 6px;
+    padding: 2rem;
+    color: #aaa;
+    box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
-.secteurTheme {
+.S_cards_img_Container{
+    margin: -2rem -2rem 1rem -2rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+
+.S_cards_img_Container img{
+    width: auto;
+    height: 310px;
+}
+
+.card__svg {
+    position: absolute;
+    left: 0;
+    top: 115px;
+}
+
+.card__content h4 {
+    color: bfbcb8;
+    margin-top: 0;
+    font-weight: 800;
+    letter-spacing: 0.01em;
     text-align: left;
-    padding: 2px 10px 10px 20px;
-    margin: 30px auto 0px auto;
-    min-width: 200px;
+}
+
+.card__content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    padding: 5%;
+    text-align: center;
+}
+
+.card__content p {
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+/* --- Section Project --- */
+
+.SectionProject {
+    padding: 10%;
+}
+
+.ProjectGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin-top: 50px;
+}
+
+.projectProduct {
+    border-radius: 10px;
+    border: 2px solid #e5b97d;
+    position: relative;
+}
+
+.projectProduct::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    border: 2px solid white;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.3) 50%, transparent 80%);
 }
 
-.secteurTheme h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
+.projectProduct h4 {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
     color: #bfbcb8;
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
+    z-index: 10;
 }
 
-.secteurTheme p {
-    margin: 10px;
-    font-size: 1rem;
-    color: #bfbcb8;
-    max-width: 250px;
+.ProjectCard1 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+.ProjectCard2 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+.ProjectCard3 {
+    grid-area: 2 / 2 / 4 / 3;
+}
+.ProjectCard4 {
+    grid-area: 3 / 1 / 5 / 2;
+}
+.ProjectCard5 {
+    grid-area: 4 / 2 / 5 / 3;
+}
+.ProjectCard6 {
+    grid-area: 5 / 1 / 6 / 3;
 }
 
-.secteurTheme img {
+.ProjectCard1 img {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    max-width: 80%;
-    height: auto;
-    margin: 10px;
-    max-width: 90%;
-    border-radius: 20px;
-    box-shadow: 0px 5px 2px 0px rgba(155,155,155,0.6),0px 0px 3px 0px #3cdcdccc,0px 4px 10px 4px rgba(55,55,55,0.9);
+    border-radius: 10px;
+}
+
+.ProjectCard2 img {
+    height: 100%;    
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.ProjectCard3 img {
+    height: 100%;    
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}    
+
+.ProjectCard4 img {          
+    height: 100%;    
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.ProjectCard5 img {
+    height: 100%;    
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.ProjectCard6 img {
+    height: 100%;    
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
