@@ -207,7 +207,6 @@
     font-weight: 800;
     letter-spacing: 0.01em;
     text-align: left;
-    font-size: 20px;
 }
 
 .card__content {
@@ -218,10 +217,8 @@
     text-align: center;
 }
 
-.card__content p {
-    /*margin-bottom: 25px;*\
+.card__content {
     text-align: left;
-    font-size: 14px;
 }
 
 /* --- Section Project --- */
