@@ -357,6 +357,8 @@ footer {
     flex-wrap: wrap;
     z-index: 999;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 
 }
 
