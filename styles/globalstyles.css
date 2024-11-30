@@ -384,3 +384,22 @@ footer p {
     margin: 20px 20px;
     text-align: center;
 }
+
+.footerbottom {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #bfbcb8;
+    margin: 20px 20px;
+    text-align: center;
+}
+
+.footerbottom a {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #e5b97d;
+    margin: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+}
