@@ -7,6 +7,7 @@ body, html {
     color: #bfbcb8;
     box-sizing: border-box;
     background-color: #141414;
+    scroll-behavior: smooth;
 }
 
 
@@ -243,9 +244,135 @@ main::before {
 }
 
 .separator {
-        width: 80%;
-        height: 2px;
-        background-color: #e5b97d;
-        margin-top: 20px;
-        margin: 20px auto;
-    }
+    width: 80%;
+    height: 2px;
+    background-color: #e5b97d;
+    margin-top: 20px;
+    margin: 20px auto;
+}
+
+/* --- Panel Reseaux Sociaux icone --- */
+
+.PanelRS
+{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px auto 0 auto;
+}
+
+.RsMenu {
+    position: absolute;
+    bottom: 100px;
+}
+
+.IconeGlass
+{
+    position: relative;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.349);
+    transform-style: flat;
+    transition: all 0.5s ease;
+    box-shadow: 0px 5px 20px -4px rgba(0, 0, 0, 0.91);
+    transform: translateZ(20px )
+}
+
+.IconeGlass::after
+{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 180%;
+    height: 30%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transition: all 0.5s ease;
+    transform: rotate(45deg);
+}
+
+.IconeGlass:hover, .IconeGlass.hover
+{
+    box-shadow: 0px 20px 50px -4px rgba(0, 0, 0, 0.91);
+    transform: scale(1.2) translateZ(40px) perspective(500px) rotateY(10deg) rotateX(8deg);
+}
+
+.IconeGlass:hover::after, .IconeGlass.hover::after
+{
+    top: -100%;
+    left: 100%;
+}
+
+.IconeGlass > svg
+{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+    fill: rgba(255, 255, 255, 0.45);
+}
+
+.IconeGlass:hover svg, .IconeGlass.hover svg
+{
+    fill: rgba(255, 255, 255, 0.85);
+}
+
+.IcoLDNGlass:hover, .IcoLDNGlass.hover
+{
+    background: rgb(0, 124, 181);
+}
+
+.IcoInstaGlass:hover, .IcoInstaGlass.hover
+{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+.IcoYoutubeGlass:hover, .IcoYoutubeGlass.hover
+{
+    background: rgb(255, 0, 0);
+}
+
+.IcoGithubGlass:hover, .IcoGithubGlass.hover
+{
+    background: #6e40c9;
+}
+
+/* --- Footer --- */
+
+footer {
+    position: relative;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 999;
+    margin: auto;
+
+}
+
+footer p {
+    color: #bfbcb8;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+}
+
+.copyright {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #bfbcb8;
+    margin: 20px 20px;
+    text-align: center;
+}
