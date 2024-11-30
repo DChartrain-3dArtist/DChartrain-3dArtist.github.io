@@ -265,9 +265,15 @@ main::before {
 
 .RsMenu {
     position: absolute;
-    bottom: 100px;
+    bottom: 5%;
 }
 
+.RsMenu p {
+    font-size: 0.8rem;
+    color: #bfbcb8;
+    text-align: center;
+    margin: 0;
+}
 .IconeGlass
 {
     position: relative;
