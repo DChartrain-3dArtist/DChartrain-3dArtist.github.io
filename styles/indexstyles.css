@@ -219,7 +219,7 @@ h5 {
 .card__content {
     position: absolute;
     left: 0;
-    top: 50%;
+    bottom: 2%;
     padding: 5%;
     text-align: center;
 }
