@@ -1,0 +1,21 @@
+{
+  "name": "Donovan CHARTRAIN | Portoflio",
+  "short_name": "DC Portoflio",
+  "icons": [
+    {
+      "src": "/assets/data/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/data/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#212121",
+  "background_color": "#141414",
+  "display": "standalone"
+}
