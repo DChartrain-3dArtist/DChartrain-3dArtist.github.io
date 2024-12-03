@@ -274,6 +274,19 @@ main::before {
     margin: 20px auto;
 }
 
+.ContactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+
+.ContactContainer ul li span {
+    color: #e5b97d;
+}
+
+
 /* --- Panel Reseaux Sociaux icone --- */
 
 .PanelRS
