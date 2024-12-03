@@ -105,7 +105,7 @@ body, html {
 }
 
 .menu-toggle-label:hover {
-    background-color: #444;
+    background-color: #212121;
 }
 
 .hamburger {
@@ -113,6 +113,10 @@ body, html {
     height: 2px;
     background-color: #e5b97d;
     position: relative;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 
 .hamburger::before,
@@ -135,6 +139,25 @@ body, html {
 
 .hamburger::after {
     top: 6px;
+}
+
+.menu-toggle:checked ~ .menu-toggle-label>.hamburger {
+    background-color: transparent;
+}
+
+
+.menu-toggle:checked ~ .menu-toggle-label>.hamburger::before {
+    transform: translateY(6px) rotate(45deg);
+    -webkit-transform: translateY(6px) rotate(45deg);
+    -moz-transform: translateY(6px) rotate(45deg);
+    -o-transform: translateY(6px) rotate(45deg);
+}
+
+.menu-toggle:checked ~ .menu-toggle-label>.hamburger::after {
+    transform: translateY(-6px) rotate(-45deg);
+    -webkit-transform: translateY(-6px) rotate(-45deg);
+    -moz-transform: translateY(-6px) rotate(-45deg);
+    -o-transform: translateY(-6px) rotate(-45deg);
 }
 
 main {
