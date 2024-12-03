@@ -128,32 +128,6 @@ h5 {
 
 /* --- Secteur Section --- */
 
-.SecteurPanel {
-    height: 320vh;
-    max-width: 1920px;
-}
-
-.Secteur_Sticky{
-    position: sticky;
-    overflow: hidden;
-    top: 50px;
-    height: 90vh;
-    max-width: 1920px;
-
-}
-
- .separatorsticky {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 100px;
-    width: 80%;
-    height: 2px;
-    background-color: #e5b97d;
-    margin-top: 20px;
-    margin: 20px auto;
-}
-
 .SecteurContent{
     display: flex;
     flex-direction: column;
@@ -177,19 +151,6 @@ h5 {
     color: #e5b97d;
 }
 
-.SecteurScroll{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 320vw;
-    max-width: 1920px;
-    will-change: transform;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 5vw;
-}
-
 .secteurCards{
     position: relative;
     background: #333;
@@ -201,6 +162,7 @@ h5 {
     color: #aaa;
     box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    margin: 20px auto;
 }
 
 .S_cards_img_Container{
