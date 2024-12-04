@@ -41,14 +41,15 @@
         <link rel="canonical" href="https://dchartrain-3dartist.github.io/">
     
         <!-- Feuilles de styles -->
-        <link rel="stylesheet" href="styles/globalstyles.css">
-        <link rel="stylesheet" href="styles/indexstyles.css">
+        <link rel="stylesheet" href="/styles/globalstyles.css">
+        <link rel="stylesheet" href="/styles/indexstyles.css">
+        <link rel="stylesheet" href="/styles/animation.css">
 
         <!-- Polices Google -->
         <link href="https://fonts.googleapis.com/css2?family=Anta&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Share+Tech&display=swap" rel="stylesheet">
     
         <!-- Scripts JavaScript -->
-        <!--<script defer src="scripts.js"></script>-->
+        <script defer src="/scripts/anim_observer.js"></script>
     
         <!-- Balises pour la performance -->
         <meta name="theme-color" content="#141414">
@@ -130,8 +131,8 @@
         <section class="HeroSection">
             <div class="HeroImage"></div>
             <div class="HeroText">
-                <h1>Donovan <br> Chartrain</h1>
-                <h2>Spécialiste 3D <br> Applications Interactives <br> Développement Web</h2>      
+                <h1 class="animate" data-animation="fade-up" data-delay="0.2s">Donovan <br> Chartrain</h1>
+                <h2 class="animate" data-animation="fade-up" data-delay="0.2s">Spécialiste 3D <br> Applications Interactives <br> Développement Web</h2>      
             </div>
             <p>Explorez l’avenir de la 3D et du développement interactif à travers mes projets. <br>
                 <br>
@@ -159,7 +160,7 @@
             <p>Découvrez mes compétences en modélisation 3D, animation, expériences interactives et création de sites web. Confiez vos projets à un professionnel polyvalent et passionné par l’innovation numérique.</p>
 
             <p>Spécialisé dans la création de visuels en images de synthèse, d’animations 3D immersives, d’applications interactives, et de solutions web, je mets à votre disposition une expertise technique et créative pour répondre à vos besoins dans les secteurs de l’architecture, de l’industrie et de la communication.</p>
-            <br>
+            <img class="Logosoft animate" data-animation="zoom-in" data-delay="0.6s" src="/assets/Logosoft.png" alt="">
             <h5>Qu’est-ce qu’un portfolio ?</h5><br>
             <p>Un portfolio est une galerie d’images, de vidéos et de projets interactifs permettant de présenter les réalisations d’un professionnel au fil de son parcours. Il constitue une vitrine de mes compétences et de mon savoir-faire, vous offrant un aperçu concret des solutions que je peux apporter à vos projets.<br>
             Ce « book numérique » est régulièrement mis à jour pour intégrer de nouvelles créations et refléter mon évolution dans les domaines de la 3D, des applications interactives et du web.</p>
@@ -191,7 +192,7 @@
             </div>
             <div class="SecteurPanel">
 
-                <div class="secteurCards">
+                <div class="secteurCards animate" data-animation="fade-left" data-delay="0.4s">
                     <div class="S_cards_img_Container">
                         <img src="assets/HeroImage.png" alt="">
                     </div>
@@ -206,7 +207,7 @@
                     </div>        
                 </div>
     
-                <div class="secteurCards">
+                <div class="secteurCards animate" data-animation="fade-right" data-delay="0.8s">
                     <div class="S_cards_img_Container">
                         <img src="assets/AnimationApt.png" alt="">
                     </div>
@@ -221,7 +222,7 @@
                     </div>        
                 </div>
     
-                <div class="secteurCards">
+                <div class="secteurCards animate" data-animation="fade-left" data-delay="0.4s">
                     <div class="S_cards_img_Container">
                         <img src="assets/SectionDevWeb.png" alt="">
                     </div>

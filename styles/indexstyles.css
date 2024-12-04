@@ -100,6 +100,10 @@
     margin: 5px 0px;
 }
 
+.Logosoft {
+    width: 80%;
+}
+
 h5 {
     margin: 10px;
     font-size: 1rem;
@@ -131,6 +135,7 @@ h5 {
 .SecteurPanel {
     width: 90%;
     padding: 20px;
+    overflow: hidden;
 }
 
 .SecteurContent{
