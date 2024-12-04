@@ -221,18 +221,18 @@ h5 {
 
 .ProjectGrid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(5, 200px);
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px auto;
 }
 
 .projectProduct {
     border-radius: 10px;
     border: 2px solid #e5b97d;
     position: relative;
+    cursor: pointer;
 }
 
 .projectProduct::after {
