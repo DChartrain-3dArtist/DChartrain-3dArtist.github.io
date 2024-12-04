@@ -43,6 +43,16 @@
     }
   }
   
+  @keyframes opacity {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
   /* Classes générales */
   .animate {
     opacity: 0;
@@ -64,5 +74,9 @@
   
   [data-animation="zoom-in"].visible {
     animation: zoom-in 1s ease forwards;
+  }
+
+  [data-animation="opacity"].visible {
+    animation: opacity 1s ease forwards;
   }
   
