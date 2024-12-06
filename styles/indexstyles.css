@@ -102,6 +102,7 @@
 
 .Logosoft {
     width: 80%;
+    max-width: 500px;
 }
 
 h5 {
@@ -136,6 +137,9 @@ h5 {
     width: 90%;
     padding: 20px;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
 }
 
 .SecteurContent{
@@ -164,7 +168,6 @@ h5 {
 .secteurCards{
     position: relative;
     background: #333;
-    /*width: 300px;*/
     height: 60vh;
     max-height: 550px;
     border-radius: 6px;
@@ -173,6 +176,7 @@ h5 {
     box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
     overflow: hidden;
     margin: 20px auto;
+    max-width: 300px;
 }
 
 .S_cards_img_Container{
@@ -216,7 +220,7 @@ h5 {
 /* --- Section Project --- */
 
 .SectionProject {
-    padding: 10%;
+    padding: 30px;
 }
 
 .ProjectGrid {
