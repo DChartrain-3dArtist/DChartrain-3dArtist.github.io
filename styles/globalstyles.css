@@ -203,11 +203,11 @@ main::before {
 }
 
 .menu-toggle:checked ~ main {
-    -webkit-transform: translateX(-2em) perspective(600px) rotateY(-10deg);
-	-moz-transform: translateX(-2em) perspective(600px) rotateY(-10deg);
-	-ms-transform: translateX(-2em) perspective(600px) rotateY(-10deg);
-	-o-transform: translateX(-2em) perspective(600px) rotateY(-10deg);
-	transform: translateX(-2em) perspective(600px) rotateY(-5deg);
+    -webkit-transform: translateX(-2em) perspective(600px) rotateY(-2deg);
+	-moz-transform: translateX(-2em) perspective(600px) rotateY(-2deg);
+	-ms-transform: translateX(-2em) perspective(600px) rotateY(-2deg);
+	-o-transform: translateX(-2em) perspective(600px) rotateY(-2deg);
+	transform: translateX(-2em) perspective(600px) rotateY(-2deg);
 }
 
 .menu-toggle:checked ~ main::before {
