@@ -140,6 +140,7 @@ header h1 {
     grid-template-rows: repeat(6, 100px);
     grid-column-gap: 4px;
     grid-row-gap: 4px;
+    overflow: hidden;
 }
 
 .ProjectCards {
