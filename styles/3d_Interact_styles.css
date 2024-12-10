@@ -7,7 +7,7 @@ header {
 
 header h1 {
     margin-bottom: 20%;
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 7px;
     line-height: 45px;
     font-weight: 400;
@@ -16,8 +16,31 @@ header h1 {
     color: #e5b97d;
 }
 
+/* --- Section --- */ 
+.SectionCompetence3D, .SectionMethode{
+    width: 80%;
+    margin: 30px auto;
+}
 
-/* -- Secteur Section --- */
+.SectionCompetence3D h3 {
+    color: #e5b97d;
+}
+
+.SectionMethode p span {
+    color: #e5b97d;
+}
+
+.SectionCompetence3D p span {
+    color: #e5b97d;
+}
+
+.SectionCompetence3D img {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+    margin: auto;
+    border: 1px solid #e5b97d;
+}
 
 .SecteurPanel {
     width: 90%;
@@ -54,7 +77,7 @@ header h1 {
 .secteurCards{
     position: relative;
     background: #333;
-    height: 60vh;
+    height: 40vh;
     max-height: 550px;
     border-radius: 6px;
     padding: 2rem;
@@ -102,6 +125,8 @@ header h1 {
 .card__content {
     text-align: left;
 }
+
+/* --- Project Overview --- */ 
 
 /* -- Projet Section --- */
 

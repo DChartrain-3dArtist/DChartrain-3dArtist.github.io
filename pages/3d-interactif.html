@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!---SIte Responsive développé en HTML, CSS et JS par Donovan Chartrain--->
+
+    <!-- Métadonnées essentielles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donovan Chartrain - 3D Interactif</title>
-    <link rel="stylesheet" href="https://dchartrain-3dartist.github.io/styles/globalstyles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Explorez les services 3D interactifs de Donovan Chartrain : création de visites virtuelles, configurateurs produits et applications immersives pour l'industrie, le commerce et la formation.">
+    <meta name="keywords" content="Donovan Chartrain, 3D interactif, visites virtuelles, configurateurs 3D, applications immersives, réalité virtuelle, réalité augmentée, WebGL, Three.js, Unreal Engine, Unity 3D, visualisation 3D en temps réel, e-commerce, formation interactive, expérience utilisateur">
+    <meta name="author" content="Donovan Chartrain">
+
+    <!-- Titre de la page -->
+    <title>Donovan Chartrain - Spécialiste en 3D Interactif : Visites Virtuelles, Configurateurs et Applications Immersives</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/data/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/data/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/data/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/data/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Donovan Chartrain | Portfolio" />
+    <link rel="manifest" href="/assets/data/site.webmanifest" />
+
+    <!-- Réseaux sociaux (Open Graph) -->
+    <meta property="og:title" content="Donovan Chartrain - Spécialiste en 3D Interactif">
+    <meta property="og:description" content="Explorez les services 3D interactifs de Donovan Chartrain : création de visites virtuelles, configurateurs produits et applications immersives pour l'industrie, le commerce et la formation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dchartrain-3dartist.github.io/">
+    <meta property="og:image" content="https://dchartrain-3dartist.github.io/assets/data/Opengraph.jpg">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:logo" content="https://dchartrain-3dartist.github.io/assets/data/favicon.svg" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Donovan Chartrain - Spécialiste en 3D Interactif">
+    <meta name="twitter:description" content="Explorez les services 3D interactifs de Donovan Chartrain : création de visites virtuelles, configurateurs produits et applications immersives pour l'industrie, le commerce et la formation.">
+    <meta name="twitter:image" content="https://dchartrain-3dartist.github.io/assets/data/Opengraph.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dchartrain-3dartist.github.io/">
+
+    <!-- Feuilles de styles -->
+    <link rel="stylesheet" href="/styles/globalstyles.css">
+    <link rel="stylesheet" href="/styles/3d_Interact_styles.css">
+    <link rel="stylesheet" href="/styles/animation.css">
+
+    <!-- Polices Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Share+Tech&display=swap" rel="stylesheet">
+
+    <!-- Scripts JavaScript -->
+    <script defer src="/scripts/anim_observer.js"></script>
+
+    <!-- Balises pour la performance -->
+    <meta name="theme-color" content="#141414">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Schema.org pour le SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Donovan Chartrain",
+        "url": "https://dchartrain-3dartist.github.io/",
+        "sameAs": [
+            "www.linkedin.com/in/donovan-chartrain-63686a138",
+            "https://www.instagram.com/3dc_effect?igsh=MXd1NTBob2Zmdmx5cA==",
+            "https://github.com/DChartrain-3dArtist"
+            "https://dchartrain-3dartist.github.io/"
+            "https://www.youtube.com/@d.chartrain3dtechnicalarti873"
+        ],
+        "jobTitle": "Spécialiste en 3D, Interactif et Développement Web",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+        }
+    }
+    </script>
 </head>
+
 <body>
     <!-- Toggle pour afficher/masquer la sidebar -->
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -17,7 +90,7 @@
     <nav class="sidebar">
         <h2>MENU</h2>
         <ul>
-            <li><a href="/index.html">// Accueil</a></li>
+            <li><a href="/">// Accueil</a></li>
             <li><a href="/pages/portfolio.html">// Portfolio</a>
                 <ul>
                     <li><a href="/pages/image-de-synthese.html">- Images de synthèse</a></li>
@@ -55,26 +128,207 @@
     </nav>
 
 
+
     <main>
-        <h1>Applications 3D Interactives : Immersion et Innovation</h1>
-        <p>Explorez mes compétences dans la conception d'expériences interactives, configurateurs 3D et visites virtuelles adaptées aux plateformes PC, mobile et Web.
-        </p>
+        <header>
+            <h1 class="animate" data-animation="fade-up" data-delay="0.2s">3D&nbsp;Interactif</h1>
+            <h2> L’innovation au service de l’expérience utilisateur</h2>
+            <p>Explorez un nouveau monde où la 3D interactive révolutionne les expériences visuelles et immersives. En combinant design, technologie et créativité, je conçois des solutions sur mesure telles que des visites virtuelles, des configurateurs 3D et des applications interactives destinées à la formation ou à la communication.</p>
+            <h3>Pourquoi opter pour la 3D interactive ?</h3>
+            <p>
+                La 3D interactive est une réponse moderne aux besoins des entreprises cherchant à captiver leur audience et à offrir des expériences engageantes. Grâce à cette technologie, vous pouvez :
+                <span>Améliorer l’engagement</span> de vos utilisateurs avec des interactions dynamiques.
+                <span>Simplifier la compréhension</span> de concepts complexes grâce à des simulations réalistes.
+                <span>Booster vos ventes</span> en proposant des outils interactifs comme les configurateurs de produits.
+                <span>Renforcer votre marque</span> en innovant dans vos supports de communication.
+            </p>
+            <a class="button" href="#ProjectSection">Voir mes Projets</a>
+        </header>
         <div class="separator"></div>
-        <h2>Compétences spécifiques</h2>
-        <ul>
-            <li>Développement de configurateurs 3D interactifs (Unreal Engine, Unity).</li>
-            <li>Création de visites virtuelles immersives.</li>
-            <li>Intégration WebGL pour une accessibilité multiplateforme.</li>
-            <li>Programmation (C#, C++, Blueprints)</li>
-        </ul>
+
+        <section class="SectionCompetence3D">
+            <h2>Mes compétences en 3D&nbsp;interactive</h2>
+            <h3> Développement de visites virtuelles immersives</h3>
+            <p>Offrez à vos utilisateurs la possibilité d’explorer des environnements en 3D réalistes et interactifs. Idéales pour les projets d’architecture, d’immobilier ou de tourisme, ces solutions permettent de se déplacer librement dans un espace virtuel et d’en apprécier chaque détail.</p>
+            <img src="/assets/AnimationApt.png" alt="">
+            
+            <h3>Conception de configurateurs 3D</h3>
+            <p>Les configurateurs 3D révolutionnent la manière dont vos clients interagissent avec vos produits. Ils peuvent personnaliser des objets (couleurs, matériaux, dimensions) en temps réel, ce qui améliore l’expérience utilisateur et accélère les décisions d’achat. Ces outils sont parfaitement adaptés aux secteurs de l’automobile, de la décoration intérieure, ou encore de la mode.</p>
+            <img src="/assets/HeroImage.png" alt="">
+            
+            <h3>Applications interactives pour la formation et l’industrie</h3>
+            <p>J’utilise la 3D pour développer des applications pédagogiques et techniques qui permettent de mieux comprendre des processus complexes. Que ce soit pour simuler des machines industrielles ou pour former des équipes dans un environnement sécurisé, ces outils offrent un apprentissage immersif et pratique.</p>
+            <img src="/assets/SectionDevWeb.png" alt="">
+
+            <h3>Expertise technique avancée</h3>
+            <p>
+                Je maîtrise les outils et technologies suivants pour concevoir des expériences interactives fluides et performantes : <br>
+                <br>
+                <span>Moteurs de développement :</span> Unreal Engine, Unity 3D. <br>
+                <br>
+                <span>Language de programation</span>JavaScript, C#, C++<br>
+                <br>
+                <span>Optimisation pour le multi-plateforme :</span> Applications desktop, mobiles (Android, iOS), ou web. <br>
+                <br>
+                <span>Intégration AR/VR :</span> Réalité augmentée et réalité virtuelle pour des expériences encore plus immersives.
+            </p>
+            <img src="/assets/AnimationApt.png" alt="">
+
+            <h3>Secteurs d’activité :</h3>
+            <p>MLes solutions 3D interactives trouvent leur place dans de nombreux domaines :<br>
+                <br>
+                <span>Immobilier et architecture : </span>Visites virtuelles interactives pour promouvoir des biens immobiliers ou des projets architecturaux.<br>
+                <br>
+                <span>Industrie :</span>Simulations pour présenter des processus, des machines ou des prototypes.<br>
+                <br>
+                <span>Communication et marketing :</span>Présentations interactives et immersives pour des salons, des lancements de produits ou des campagnes publicitaires.<br>
+                <br>
+                <span>Formation :</span>Plateformes pédagogiques interactives pour enseigner des concepts techniques.
+            </p>
+        </section>
 
         <div class="separator"></div>
-        <h2>Projets mis en avant</h2>
+
+        <section class="SectionMethode">
+            <h2>Méthodologie de travail</h2>
+            <p>
+                <span>Analyse des besoins :</span>Chaque projet débute par une discussion approfondie pour cerner vos objectifs et vos attentes.<br>
+                <br>
+                <span>Prototypage et validation :</span>Création de concepts ou de maquettes interactives pour valider les grandes lignes du projet.<br>
+                <br>
+                <span>Production et développement : </span>Conception d’environnements 3D, intégration des interactions et optimisation pour garantir fluidité et performance.<br>
+                <br>
+                <span>Tests et ajustements :</span>Validation de l’expérience utilisateur et ajustements selon vos retours<br>
+                <br>
+                <span>Livraison et support : </span>Livraison de l’application clé en main avec un support technique pour assurer une mise en œuvre fluide.<br>
+                <br>
+                <span>Garantie de satisfaction :</span> Je m’engage à fournir un produit de haute qualité et satisfaisant.
+            </p>
+        </section>
+
         <div class="separator"></div>
-        <h2>En savoir plus</h2>
+
+        <section class="SecteurSection">
+            <div class="SecteurContent">
+                <h3>Zoom sur 2 projets</h3>
+                <p>Découvrez en details 2 de mes projets</p>
+            </div>
+            <div class="SecteurPanel">
+
+                <div class="secteurCards animate" data-animation="fade-left" data-delay="0.3s">
+                    <div class="S_cards_img_Container">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+                    <svg class="card__svg" viewBox="0 0 800 500">
+                        <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
+                        <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="#e5b97d" stroke-width="3" fill="transparent"/>
+                    </svg>   
+                    <div class="card__content">
+                    <h4>Projet 1</h4>
+                    <p>Resumer du projet 1</p> 
+                    <a class="button" href="about.html"> En savoir plus</a>
+                    </div>        
+                </div>
+    
+                <div class="secteurCards animate" data-animation="fade-right" data-delay="0.3s">
+                    <div class="S_cards_img_Container">
+                        <img src="/assets/AnimationApt.png" alt="">
+                    </div>
+                    <svg class="card__svg" viewBox="0 0 800 500">
+                        <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
+                        <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="#e5b97d" stroke-width="3" fill="transparent"/>
+                    </svg>   
+                    <div class="card__content">
+                    <h4>Projet 2</h4>
+                    <p>Resumer du projet 2</p> 
+                    <a class="button" href="about.html"> En savoir plus</a>
+                    </div>        
+                </div>
+    
+            </div>
+
+        </section>
+    
         <div class="separator"></div>
-        <h2>Contacts</h2>
+
+        <section class="ProjectOverview">
+            <div class="ProjectContainer">
+                <h2>Galerie de réalisations : Laissez-vous inspirer</h2>
+                <p>Explorez mes projets passés, de la création d’images fixes ultra-réalistes aux animations dynamiques qui donnent vie aux idées. Vous y découvrirez une variété de travaux mettant en avant mon expertise et ma polyvalence</p>
+                <div class="ProjectGrid">
+
+                    <div class="ProjectCards cards1 animate" data-animation="fade-left" data-delay="0s">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+
+                    <div class="ProjectCards cards2 animate" data-animation="fade-right" data-delay="0s">
+                        <img src="/assets/hero.png" alt="">
+                    </div>
+
+                    <div class="ProjectCards cards3 animate" data-animation="fade-right" data-delay="0.1s">
+                        <img src="/assets/AnimationApt.png" alt="">
+                    </div>
+                    
+                    <div class="ProjectCards cards4 animate" data-animation="fade-left" data-delay="0.1s">
+                        <img src="/assets/SectionDevWeb.png" alt="">
+                    </div>
+                    
+                    <div class="ProjectCards cards5 animate" data-animation="fade-left" data-delay="0.2s">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+                    
+                    <div class="ProjectCards cards6 animate" data-animation="fade-left" data-delay="0.2s">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+                    
+                    <div class="ProjectCards cards7 animate" data-animation="fade-right" data-delay="0.3s">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+                    
+                    <div class="ProjectCards cards8 animate" data-animation="fade-left" data-delay="0.3s">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+                    
+                    <div class="ProjectCards cards9 animate" data-animation="fade-right" data-delay="0.4s">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+                    
+                    <div class="ProjectCards cards10 animate" data-animation="fade-left" data-delay="0.4s">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+                    
+                    <div class="ProjectCards cards11 animate" data-animation="fade-right" data-delay="0.5s">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+                    
+                    <div class="ProjectCards cards12 animate" data-animation="fade-left" data-delay="0.5s">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="separator"></div>
+
+        <section class="SectionContact">
+            <div class="ContactContainer">
+                <h3>Contactez-moi pour vos projets&nbsp;interactifs</h3>
+                <p>Prêt à intégrer l’interactivité 3D à vos projets ? Je suis à votre disposition pour discuter de vos besoins et pour concevoir une solution sur mesure. Consultez la section Contact pour prendre rendez-vous ou explorez la page Compétences pour en savoir plus sur mon parcours et mes qualifications.</p>
+
+                <div class="separator"></div>
+
+                <h4>Pourquoi me contacter ?</h4>
+                <ul>
+                  <li><span>Pour un projet :</span> Discutons de vos besoins en création 3D, interactivité ou développement web.</li>
+                  <li><span>Pour une collaboration :</span> Travaillons ensemble pour donner vie à vos idées.</li>
+                  <li><span>Pour des questions :</span> Je suis disponible pour répondre à toutes vos interrogations concernant mes compétences ou mes réalisations.</li>
+                </ul>
+                <a class="button" href="about.html">Contactez-moi</a>
+            </div>
+        </section>
+
+        <div class="separator"></div>
+
 
         <footer>
             <p>Restons connectés ! <br>
@@ -100,5 +354,6 @@
             </div>
         </footer>
     </main>
+
 </body>
 </html>

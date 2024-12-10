@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!---SIte Responsive développé en HTML, CSS et JS par Donovan Chartrain--->
+
+    <!-- Métadonnées essentielles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donovan Chartrain - Développement Web</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Explorez les services en développement web de Donovan Chartrain : création de sites vitrines, Extension CMS et back-end, création de design sur mesure et optimisation SEO.">
+    <meta name="keywords" content="Donovan Chartrain, 3D interactif, visites virtuelles, configurateurs 3D, applications immersives, réalité virtuelle, réalité augmentée, WebGL, Three.js, Unreal Engine, Unity 3D, visualisation 3D en temps réel, e-commerce, formation interactive, expérience utilisateur">
+    <meta name="author" content="Donovan Chartrain">
+
+    <!-- Titre de la page -->
+    <title>Donovan Chartrain - Développement Web – Sites Sur Mesure</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/data/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/data/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/data/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/data/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Donovan Chartrain | Portfolio" />
+    <link rel="manifest" href="/assets/data/site.webmanifest" />
+
+    <!-- Réseaux sociaux (Open Graph) -->
+    <meta property="og:title" content="Donovan Chartrain - Développement Web – Sites Sur Mesure">
+    <meta property="og:description" content="Explorez les services en développement web de Donovan Chartrain : création de sites vitrines, Extension CMS et back-end, création de design sur mesure et optimisation SEO.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dchartrain-3dartist.github.io/">
+    <meta property="og:image" content="https://dchartrain-3dartist.github.io/assets/data/Opengraph.jpg">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:logo" content="https://dchartrain-3dartist.github.io/assets/data/favicon.svg" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Donovan Chartrain - Développement Web – Sites Sur Mesure">
+    <meta name="twitter:description" content="Explorez les services en développement web de Donovan Chartrain : création de sites vitrines, Extension CMS et back-end, création de design sur mesure et optimisation SEO.">
+    <meta name="twitter:image" content="https://dchartrain-3dartist.github.io/assets/data/Opengraph.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dchartrain-3dartist.github.io/">
+
+    <!-- Feuilles de styles -->
     <link rel="stylesheet" href="/styles/globalstyles.css">
+    <link rel="stylesheet" href="/styles/web_dev_styles.css">
+    <link rel="stylesheet" href="/styles/animation.css">
+
+    <!-- Polices Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Share+Tech&display=swap" rel="stylesheet">
+
+    <!-- Scripts JavaScript -->
+    <script defer src="/scripts/anim_observer.js"></script>
+
+    <!-- Balises pour la performance -->
+    <meta name="theme-color" content="#141414">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Schema.org pour le SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Donovan Chartrain",
+        "url": "https://dchartrain-3dartist.github.io/",
+        "sameAs": [
+            "www.linkedin.com/in/donovan-chartrain-63686a138",
+            "https://www.instagram.com/3dc_effect?igsh=MXd1NTBob2Zmdmx5cA==",
+            "https://github.com/DChartrain-3dArtist"
+            "https://dchartrain-3dartist.github.io/"
+            "https://www.youtube.com/@d.chartrain3dtechnicalarti873"
+        ],
+        "jobTitle": "Spécialiste en 3D, Interactif et Développement Web",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+        }
+    }
+    </script>
 </head>
+
 <body>
     <!-- Toggle pour afficher/masquer la sidebar -->
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -17,7 +90,7 @@
     <nav class="sidebar">
         <h2>MENU</h2>
         <ul>
-            <li><a href="/index.html">// Accueil</a></li>
+            <li><a href="/">// Accueil</a></li>
             <li><a href="/pages/portfolio.html">// Portfolio</a>
                 <ul>
                     <li><a href="/pages/image-de-synthese.html">- Images de synthèse</a></li>
@@ -54,26 +127,199 @@
 
     </nav>
 
+
+
     <main>
-        <h1>Développement Web : Allier Design et Performance</h1>
-        <p>Découvrez mes réalisations web combinant créativité et technologies avancées pour des expériences utilisateur optimales.</p>
+        <header>
+            <h1 class="animate" data-animation="fade-up" data-delay="0.2s">Création de site&nbsp;Web</h1>
+            <h2>Offrez une vitrine unique à votre activité</h2>
+            <p>Créer un site web, c’est concevoir une plateforme sur mesure qui reflète votre identité tout en répondant aux attentes de votre audience. Avec une expertise complète en développement web, design et optimisation SEO, je propose des solutions adaptées aux besoins des entreprises et des créateurs.</p>
+            <h3>Pourquoi choisir mes services en développement web ?</h3>
+            <p>
+                Je conçois des sites web performants et esthétiques en combinant design, développement et personnalisation avancée. Mon approche pluridisciplinaire inclut la création d'illustrations et d'éléments visuels sur mesure, pour des sites qui captivent et se démarquent.
+                <span>Développement personnalisé :</span>Des sites vitrines codés à la main en HTML, CSS et JavaScript pour un contrôle total. <br>
+                <br>
+                <span>Sites sous WordPress :</span> Création de sites optimisés avec des outils comme Divi et Elementor, ou développement d’extensions et modules sur mesure. <br>
+                <br>
+                <span>Conception UX/UI :</span>Un design intuitif et ergonomique pour améliorer l'expérience utilisateur. <br>
+                <br>
+                <span>SEO et optimisation technique :</span> Structuration des pages et contenu pour maximiser votre visibilité sur les moteurs de recherche. <br>
+                <br>
+                <span>Création d’éléments visuels :</span>Intégration d’illustrations, d’images de synthèse et de contenus visuels adaptés à votre charte graphique.
+            </p>
+            <a class="button" href="#ProjectSection">Voir mes Projets</a>
+        </header>
+        <div class="separator"></div>
+
+        <section class="SectionCompetence3D">
+            <h2>Mes compétences en développement&nbsp;web</h2>
+            <h3>Création de sites vitrines sur mesure</h3>
+            <p>Je développe des sites vitrines élégants et performants, idéaux pour présenter vos services ou mettre en avant votre activité. Que ce soit avec un code brut ou avec des outils comme WordPress, je m’assure que chaque projet soit unique et parfaitement adapté à vos besoins.</p>
+            <img src="/assets/AnimationApt.png" alt="">
+            
+            <h3>Expertise WordPress avancée</h3>
+            <p>Création et personnalisation de thèmes avec Divi et Elementor. <br>
+                Développement de modules et extensions sur mesure pour ajouter des fonctionnalités spécifiques. <br>
+                Intégration et gestion de contenu optimisé pour le SEO. <br>
+            </p>
+            <img src="/assets/HeroImage.png" alt="">
+            
+            <h3>Front-End Design et expérience utilisateur (UX/UI)</h3>
+            <p>Je conçois des interfaces modernes et attrayantes, tout en veillant à une navigation fluide et intuitive. Grâce à ma maîtrise des principes de design et des outils de création graphique, je peux également produire des visuels uniques, comme des illustrations ou des rendus 3D, directement intégrés dans le site.</p>
+            <img src="/assets/SectionDevWeb.png" alt="">
+
+            <h3>SEO et performance technique</h3>
+            <p>
+                Je mets un point d'honneur à optimiser chaque site pour un référencement naturel efficace : <br>
+                <br>
+                <span>Optimisation</span> des temps de chargement<br>
+                <br>
+                Structuration des balises et contenu pour le <span>SEO.</span><br>
+                <br>
+                <span>Responsive design</span> pour une compatibilité sur tous les appareils.<br>
+            </p>
+            <img src="/assets/AnimationApt.png" alt="">
+
+            <h3>Technologies et outils maîtrisés</h3>
+            <p> <br>
+                <span>Développement Front-End</span> <br>
+                <br>
+                HTML5, CSS3, JavaScript (ES6+). <br>
+                Librairies CSS : TailwindCSS, Bootstrap, SASS. <br>
+                <br>
+                <span>WordPress et constructeurs de sites</span><br>
+                <br>
+                WordPress : Développement de thèmes et extensions sur mesure. <br>
+                Constructeurs : Divi, Elementor. <br>
+                <br>
+                <span>Illustrations et créations graphiques</span> <br>
+                <br>
+                Création de visuels 3D ou d’illustrations pour enrichir vos sites. <br>
+                Maîtrise d'outils graphiques comme Photoshop, Illustrator et Blender. <br>
+            </p>
+        </section>
 
         <div class="separator"></div>
-        <h2>Compétences spécifiques</h2>
-        <ul>
-            <li>Développement front-end (HTML, CSS, JavaScript).</li>
-            <li>Développement back-end (PHP, API WordPress)</li>
-            <li>Conception de sites vitrines personnalisés (WordPress, Divi)</li>
-            <li>Intégration de visuels 3D sur le web.</li>
-        </ul>
+
+        <section class="SecteurSection">
+            <div class="SecteurContent">
+                <h3>Zoom sur 2 projets</h3>
+                <p>Découvrez en details 2 de mes projets</p>
+            </div>
+            <div class="SecteurPanel">
+
+                <div class="secteurCards animate" data-animation="fade-left" data-delay="0.3s">
+                    <div class="S_cards_img_Container">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+                    <svg class="card__svg" viewBox="0 0 800 500">
+                        <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
+                        <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="#e5b97d" stroke-width="3" fill="transparent"/>
+                    </svg>   
+                    <div class="card__content">
+                    <h4>Projet 1</h4>
+                    <p>Resumer du projet 1</p> 
+                    <a class="button" href="about.html"> En savoir plus</a>
+                    </div>        
+                </div>
+    
+                <div class="secteurCards animate" data-animation="fade-right" data-delay="0.3s">
+                    <div class="S_cards_img_Container">
+                        <img src="/assets/AnimationApt.png" alt="">
+                    </div>
+                    <svg class="card__svg" viewBox="0 0 800 500">
+                        <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
+                        <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="#e5b97d" stroke-width="3" fill="transparent"/>
+                    </svg>   
+                    <div class="card__content">
+                    <h4>Projet 2</h4>
+                    <p>Resumer du projet 2</p> 
+                    <a class="button" href="about.html"> En savoir plus</a>
+                    </div>        
+                </div>
+            </div>
+        </section>
+    
+        <div class="separator"></div>
+
+        <section class="ProjectOverview">
+            <div class="ProjectContainer">
+                <h2>Galerie de réalisations : Laissez-vous inspirer</h2>
+                <p>Explorez mes projets passés, de la création d’images fixes ultra-réalistes aux animations dynamiques qui donnent vie aux idées. Vous y découvrirez une variété de travaux mettant en avant mon expertise et ma polyvalence</p>
+                <div class="ProjectGrid">
+
+                    <div class="ProjectCards cards1 animate" data-animation="fade-left" data-delay="0s">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+
+                    <div class="ProjectCards cards2 animate" data-animation="fade-right" data-delay="0s">
+                        <img src="/assets/hero.png" alt="">
+                    </div>
+
+                    <div class="ProjectCards cards3 animate" data-animation="fade-right" data-delay="0.1s">
+                        <img src="/assets/AnimationApt.png" alt="">
+                    </div>
+                    
+                    <div class="ProjectCards cards4 animate" data-animation="fade-left" data-delay="0.1s">
+                        <img src="/assets/SectionDevWeb.png" alt="">
+                    </div>
+                    
+                    <div class="ProjectCards cards5 animate" data-animation="fade-left" data-delay="0.2s">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+                    
+                    <div class="ProjectCards cards6 animate" data-animation="fade-left" data-delay="0.2s">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+                    
+                    <div class="ProjectCards cards7 animate" data-animation="fade-right" data-delay="0.3s">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+                    
+                    <div class="ProjectCards cards8 animate" data-animation="fade-left" data-delay="0.3s">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+                    
+                    <div class="ProjectCards cards9 animate" data-animation="fade-right" data-delay="0.4s">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+                    
+                    <div class="ProjectCards cards10 animate" data-animation="fade-left" data-delay="0.4s">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+                    
+                    <div class="ProjectCards cards11 animate" data-animation="fade-right" data-delay="0.5s">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+                    
+                    <div class="ProjectCards cards12 animate" data-animation="fade-left" data-delay="0.5s">
+                        <img src="/assets/HeroImage.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <div class="separator"></div>
-        <h2>Projets mis en avant</h2>
+
+        <section class="SectionContact">
+            <div class="ContactContainer">
+                <h3>Contactez-moi pour discuter de votre projet</h3>
+                <p>Prêt à donner vie à vos idées ? Je suis à votre disposition pour concevoir un site web qui mettra en valeur votre activité et vos projets. Rendez-vous dans la section Contact pour échanger ou explorez mes compétences sur la page Compétences.</p>
+
+                <div class="separator"></div>
+
+                <h4>Pourquoi me contacter ?</h4>
+                <ul>
+                  <li><span>Pour un projet :</span> Discutons de vos besoins en création 3D, interactivité ou développement web.</li>
+                  <li><span>Pour une collaboration :</span> Travaillons ensemble pour donner vie à vos idées.</li>
+                  <li><span>Pour des questions :</span> Je suis disponible pour répondre à toutes vos interrogations concernant mes compétences ou mes réalisations.</li>
+                </ul>
+                <a class="button" href="about.html">Contactez-moi</a>
+            </div>
+        </section>
+
         <div class="separator"></div>
-        <h2>En savoir plus</h2>
-        <div class="separator"></div>
-        <h2>Contacts</h2>
-        <div class="separator"></div>
+
 
         <footer>
             <p>Restons connectés ! <br>
@@ -98,8 +344,7 @@
                 <p class="copyright">Copyright 2024 © - Made with ❤️ by <a href="#">Donovan Chartrain</a></p>
             </div>
         </footer>
-
     </main>
-    
+
 </body>
 </html>
