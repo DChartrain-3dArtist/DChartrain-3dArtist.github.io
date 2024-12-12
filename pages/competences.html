@@ -1,10 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!---SIte Responsive développé en HTML, CSS et JS par Donovan Chartrain--->
+
+    <!-- Métadonnées essentielles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donovan Chartrain - Mes Compétences</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Découvrez les compétences pluridisciplinaires de Donovan Chartrain : infographie 3D, animation, développement web et applications interactives. Rigoureux et innovant, Donovan combine créativité et expertise technique pour répondre aux besoins des entreprises en architecture, industrie et communication.">
+    <meta name="keywords" content="Donovan Chartrain, compétences, infographie 3D, développement web, animation 3D, applications interactives, modélisation 3D, design UX/UI, SEO, WordPress, Unreal Engine, Blender, Cinema 4D">
+    <meta name="author" content="Donovan Chartrain">
+
+    <!-- Titre de la page -->
+    <title>Donovan Chartrain - Compétences en 3D, Développement Web et Design Numérique</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/data/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/data/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/data/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/data/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Donovan Chartrain | Portfolio" />
+    <link rel="manifest" href="/assets/data/site.webmanifest" />
+
+    <!-- Réseaux sociaux (Open Graph) -->
+    <meta property="og:title" content="Donovan Chartrain - 3D, Interactif & Développement Web">
+    <meta property="og:description" content="Découvrez les compétences de Donovan CHARTRAIN en image et animation 3D : modélisation, texturing, animation et rendus photoréalistes pour l'architecture, l'industrie et la communication.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dchartrain-3dartist.github.io/competences">
+    <meta property="og:image" content="https://dchartrain-3dartist.github.io/assets/data/Opengraph.jpg">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:logo" content="https://dchartrain-3dartist.github.io/assets/data/favicon.svg" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Donovan Chartrain - Expert en Image 3D">
+    <meta name="twitter:description" content="Découvrez les compétences de Donovan CHARTRAIN en image et animation 3D : modélisation, texturing, animation et rendus photoréalistes pour l'architecture, l'industrie et la communication.">
+    <meta name="twitter:image" content="https://dchartrain-3dartist.github.io/assets/data/Opengraph.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dchartrain-3dartist.github.io/">
+
+    <!-- Feuilles de styles -->
     <link rel="stylesheet" href="/styles/globalstyles.css">
+    <link rel="stylesheet" href="/styles/competences_styles.css">
+    <link rel="stylesheet" href="/styles/animation.css">
+
+    <!-- Polices Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Share+Tech&display=swap" rel="stylesheet">
+
+    <!-- Scripts JavaScript -->
+    <script defer src="/scripts/anim_observer.js"></script>
+
+    <!-- Balises pour la performance -->
+    <meta name="theme-color" content="#141414">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Schema.org pour le SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Donovan Chartrain",
+        "url": "https://dchartrain-3dartist.github.io/",
+        "sameAs": [
+            "www.linkedin.com/in/donovan-chartrain-63686a138",
+            "https://www.instagram.com/3dc_effect?igsh=MXd1NTBob2Zmdmx5cA==",
+            "https://github.com/DChartrain-3dArtist"
+            "https://dchartrain-3dartist.github.io/"
+            "https://www.youtube.com/@d.chartrain3dtechnicalarti873"
+        ],
+        "jobTitle": "Spécialiste en 3D, Interactif et Développement Web",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Toggle pour afficher/masquer la sidebar -->
@@ -17,7 +89,7 @@
     <nav class="sidebar">
         <h2>MENU</h2>
         <ul>
-            <li><a href="/index.html">// Accueil</a></li>
+            <li><a href="/">// Accueil</a></li>
             <li><a href="/pages/portfolio.html">// Portfolio</a>
                 <ul>
                     <li><a href="/pages/image-de-synthese.html">- Images de synthèse</a></li>
@@ -55,24 +127,138 @@
     </nav>
 
     <main>
-        <h1>Mes Compétences</h1>
-        <ul>
-            <li><strong>Modélisation et Animation 3D :</strong> Blender, Cinema 4D, 3ds Max, Nomad Sculpt, Unreal Engine</li>
-            <li><strong>Applications Interactives :</strong>Unreal Engine (Blueprints, C++), Unity (C#).</li>
-            <li><strong>Développement Web : </strong> WordPress (DIVI, API), HTML, CSS, JavaScript, PHP</li>
-            <li><strong>Outils Visuels :</strong> Photoshop, After Effects,</li>
-        </ul>
+        <header>
+            <h1 class="animate" data-animation="fade-up" data-delay="0.2s">Donovan <br> Chartrain</h1>
+            <h2>Un créateur passionné au carrefour de la 3D et du développement web</h2>
+            <p>Passionné par la robotique et l’innovation technologique, j’ai bâti mon parcours sur une curiosité insatiable et une volonté de repousser les limites de la création numérique. De mes débuts en CAO à ma maîtrise actuelle de l’infographie 3D, de la programmation interactive et du développement web, j’ai toujours cherché à intégrer des compétences pluridisciplinaires pour offrir des solutions complètes et adaptées aux besoins des entreprises.</p>
+            <p>Aujourd’hui, je recherche un poste stimulant dans les domaines de la 3D ou du développement web, au sein d’une entreprise ou d’une agence, où je pourrais continuer à progresser, contribuer activement aux projets et enrichir mes compétences.</p>
+            <a class="button" href="#MonCv">Télécharger mon CV</a>
+        </header>
+
         <div class="separator"></div>
 
-        <div style="height: 200vh;">Tmp White Space</div>
+        <section class="SectionExpertise">
+            <h2>Mon expertise : Une polyvalence au service de vos projets</h2>
+            <h3>Infographie 3D et animation</h3>
+            <p>Créer des mondes virtuels réalistes ou stylisés est au cœur de ma passion pour la 3D. Je maîtrise l’ensemble du processus créatif, de la conception à la post-production :</p>
+            <ul>
+                <li><p><span>Modélisation et texturing avancés </span>Création de modèles détaillés et de matériaux PBR sur mesure.</p></li>
+                <li><p><span>Animation et rigging :</span>Animation 3D réaliste, produits ou simulations techniques.</p></li>
+                <li><p><span>Rendu photoréaliste :</span>Expertise dans les moteurs comme V-Ray, Octane, Redshift et Arnold. Ainsi que dans les Moteurs Graphiques tel que Unreal Engine.</p></li>
+                <li><p><span>Exemple marquant : </span>Réalisation d’images de synthèse pour Location Drive Ventoux, une agence de location de voitures, mettant en avant des véhicules avec un rendu réaliste et captivant.</p></li>
+            </ul>
+            <img src="/assets/AnimationApt.png" alt="">
+            <a class="button" href="about.html"> En savoir plus</a>
 
-        <section class="MonCV" id="MonCv">
-            <p>Découvrez mon parcours professionnel et les compétences qui me permettent de transformer vos idées en projets concrets.</p>
+
+            <h3>Programmation interactive et applications 3D</h3>
+            <p>Pour donner vie à mes créations, j’intègre l’interactivité et l’immersion grâce à une maîtrise approfondie des moteurs graphiques et des langages de programmation :</p>
+            <ul>
+                <li><p><span>Développement d’applications VR/AR et interactives :</span>Avec Unreal Engine et Unity, je crée des expériences immersives sur différents supports</p></li>
+                <li><p><span>Programmation avancée : </span>Création de shaders, IA et interfaces utilisateur avec C#, Python et HLSL.</p></li>
+                <li><p><span>Recherche et développement :</span> Conception d’outils internes pour optimiser les workflows techniques.</p></li>
+            </ul>
+            <a class="button" href="about.html"> En savoir plus</a>
+
+
+            <h3>Développement web</h3>
+            <p>Enrichi par ma dernière expérience chez Grapheau, je conçois des sites web modernes et optimisés :</p>
+            <ul>
+                <li><p><span>Sites vitrines sur mesure :</span>Développement en HTML, CSS, JavaScript ou WordPress.</p></li>
+                <li><p><span>Personnalisation avancée : </span>Création de modules et extensions spécifiques pour Divi et Elementor.</p></li>
+                <li><p><span>Design et SEO : </span> Conception UX/UI intuitive, intégration d’illustrations personnalisées et optimisation SEO.</p></li>
+                <li><p><span>Projets marquants :</span> Réalisation de trois sites web pour Grapheau, mettant en avant une structure solide et un design fonctionnel.</p></li>
+            </ul>
+            <a class="button" href="about.html"> En savoir plus</a>
+
         </section>
 
-        <div style="height: 200vh;">Tmp White Space</div>
+        <div class="separator"></div>
+
+        <section class="SectionVision">
+            <h2>Mon approche professionnelle</h2>
+            <p>Je travaille avec rigueur et précision pour garantir des résultats de qualité, tout en m’adaptant aux exigences et à la nature de chaque projet :</p>
+            <ul>
+                <li><p><span>Structuration méthodique :</span>Validation des étapes pour assurer des livrables optimaux en un minimum de temps.</p></li>
+                <li><p><span>Adaptabilité :</span> Une grande réactivité et une méthode ajustée à chaque type de projet, qu’il s’agisse de 3D ou de web.</p></li>
+                <li><p><span>Collaboration efficace :</span> Une compréhension technique approfondie, notamment dans des domaines exigeants comme l’ingénierie, l’architecture et l’industrie.</p></li>
+            </ul>
+        </section>
 
         <div class="separator"></div>
+
+        <section class="SectionTools">
+            <h2>Outils et technologies maîtrisés</h2>
+            <p>Je dispose d’une boîte à outils complète pour répondre à des besoins variés :</p>
+            <ul>
+                <li><p><span>3D :</span> Blender, Maya, 3DS Max, Cinema 4D, Substance Painter, NomadSculpt, Zbrush.</p></li>
+                <li><p><span>Moteurs graphiques :</span> Unreal Engine, Unity, Unigine, CryEngine.</p></li>
+                <li><p><span>Langages de programmation :</span>  C#, C++, Blueprint, HLSL, Python, HTML, CSS, JavaScript, PHP, SQL.</p></li>
+                <li><p><span>Web :</span> WordPress, Divi, Elementor, SEO/SEA, Google Ads, Search Console, Screaming Frog</p></li>
+                <li><p><span>Wireframing :</span> Figma, Adobe XD</p></li>
+                <li><p><span>Design :</span> Photoshop, Illustrator, Indesign, After Effects, Premiere Pro, Davinci Resolve, Natron</p></li>
+            </ul>
+        </section>
+    
+        <div class="separator"></div>
+
+        <section class="SectionValue">
+            <h2>Mes valeurs et qualités</h2>
+            <ul>
+                <li><p><span>Minutieux :</span> Chaque détail compte pour garantir un résultat irréprochable.</p></li>
+                <li><p><span>Innovant :</span> Une curiosité permanente pour intégrer les dernières technologies.</p></li>
+                <li><p><span>Adaptabilité et curiosité :</span>  Capacité à m’immerger dans différents projets et environnements techniques.</p></li>
+                <li><p><span>Goût pour le design :</span> Une esthétique soignée pour des créations impactantes.</p></li>
+            </ul>
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="SectionExperience">
+            <h2>Mes expériences clés</h2>
+            <h3>Com3D (Agence de communication)</h3>
+            <ul>
+                <li><p>Réalisation d’animations marketing et de rendus photoréalistes dans des environnements techniques et innovants.</p></li>
+                <li><p>Développement de contenus visuels pour des projets liés à l’industrie et à l’architecture.</p></li>
+            </ul>
+
+            <h3>Grapheau (Cabinet d’ingénieur conseil)</h3>
+            <ul>
+                <li><p>Gestion de projets 3D et développement de trois sites web.</p></li>
+                <li><p>Utilisation de ma polyvalence pour répondre aux besoins techniques de l’entreprise.</p></li>
+                <li><p>Administration et gestion du parc informatique des sociétés.</p></li>
+            </ul>
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="SectionCV" id="MonCv">
+            <h2>Téléchargez mon CV et explorez mon portfolio</h2>
+            <p>Téléchargez mon CV pour découvrir plus en détail mon parcours et mes compétences.</p>
+            <a class="button" href="about.html">Téléchargez mon CV</a>
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="SectionContact">
+            <div class="ContactContainer">
+                <h3>Contactez-moi pour vos projets&nbsp;3D</h3>
+                <p>Prêt à transformer vos idées en réalité ? Je suis à votre disposition pour discuter de vos besoins et pour établir une stratégie adaptée à votre projet. Rendez-vous dans la section Contact pour me joindre directement ou dans Compétences pour découvrir davantage mon parcours et mes qualifications.</p>
+
+                <div class="separator"></div>
+
+                <h4>Pourquoi me contacter ?</h4>
+                <ul>
+                  <li><span>Pour un projet :</span> Discutons de vos besoins en création 3D, interactivité ou développement web.</li>
+                  <li><span>Pour une collaboration :</span> Travaillons ensemble pour donner vie à vos idées.</li>
+                  <li><span>Pour des questions :</span> Je suis disponible pour répondre à toutes vos interrogations concernant mes compétences ou mes réalisations.</li>
+                </ul>
+                <a class="button" href="about.html">Contactez-moi</a>
+            </div>
+        </section>
+
+        <div class="separator"></div>
+
         <footer>
             <p>Restons connectés ! <br>
                 <br>
@@ -96,7 +282,6 @@
                 <p class="copyright">Copyright 2024 © - Made with ❤️ by <a href="#">Donovan Chartrain</a></p>
             </div>
         </footer>
-
     </main>
 
 </body>

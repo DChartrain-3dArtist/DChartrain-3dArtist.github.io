@@ -1,0 +1,43 @@
+/* --- Hero Section --- */
+
+header {
+    padding: 30px;
+    width: 80%;
+}
+
+header h1 {
+    margin-bottom: 20%;
+    font-size: 30px;
+    letter-spacing: 7px;
+    line-height: 45px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    color: #e5b97d;
+}
+
+/* --- Section --- */
+
+.SectionExpertise, .SectionVision, .SectionTools, .SectionValue, .SectionExperience, .SectionCV {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.SectionExpertise img {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+    margin: auto;
+    border: 1px solid #e5b97d;
+    margin-bottom: 20px;
+}
+
+
+h3 {
+    color: #e5b97d;
+}
+
+ul li p span {
+    color: #e5b97d;
+    font-weight: bold;
+}

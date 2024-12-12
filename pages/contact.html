@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!---SIte Responsive développé en HTML, CSS et JS par Donovan Chartrain--->
+
+    <!-- Métadonnées essentielles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donovan Chartrain - Contact</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Prenez contact avec Donovan Chartrain, expert en infographie 3D, développement web et applications interactives. Je suis à votre écoute pour discuter de vos projets et collaborations.">
+    <meta name="keywords" content="Donovan Chartrain, contact, portfolio, infographie 3D, développement web, animation 3D, applications interactives, collaboration, design numérique, projets professionnels">
+    <meta name="author" content="Donovan Chartrain">
+
+    <!-- Titre de la page -->
+    <title>Donovan Chartrain - Contactez-moi pour vos projets en 3D et Développement Web</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/data/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/data/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/data/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/data/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Donovan Chartrain | Portfolio" />
+    <link rel="manifest" href="/assets/data/site.webmanifest" />
+
+    <!-- Réseaux sociaux (Open Graph) -->
+    <meta property="og:title" content="Donovan Chartrain - 3D, Interactif & Développement Web">
+    <meta property="og:description" content="Découvrez les compétences de Donovan CHARTRAIN en image et animation 3D : modélisation, texturing, animation et rendus photoréalistes pour l'architecture, l'industrie et la communication.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dchartrain-3dartist.github.io/">
+    <meta property="og:image" content="https://dchartrain-3dartist.github.io/assets/data/Opengraph.jpg">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:logo" content="https://dchartrain-3dartist.github.io/assets/data/favicon.svg" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Donovan Chartrain - Expert en Image 3D">
+    <meta name="twitter:description" content="Découvrez les compétences de Donovan CHARTRAIN en image et animation 3D : modélisation, texturing, animation et rendus photoréalistes pour l'architecture, l'industrie et la communication.">
+    <meta name="twitter:image" content="https://dchartrain-3dartist.github.io/assets/data/Opengraph.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dchartrain-3dartist.github.io/">
+
+    <!-- Feuilles de styles -->
     <link rel="stylesheet" href="/styles/globalstyles.css">
+    <link rel="stylesheet" href="/styles/contact_styles.css">
+    <link rel="stylesheet" href="/styles/animation.css">
+
+    <!-- Polices Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Share+Tech&display=swap" rel="stylesheet">
+
+    <!-- Scripts JavaScript -->
+    <script defer src="/scripts/anim_observer.js"></script>
+
+    <!-- Balises pour la performance -->
+    <meta name="theme-color" content="#141414">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Schema.org pour le SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Donovan Chartrain",
+        "url": "https://dchartrain-3dartist.github.io/",
+        "sameAs": [
+            "www.linkedin.com/in/donovan-chartrain-63686a138",
+            "https://www.instagram.com/3dc_effect?igsh=MXd1NTBob2Zmdmx5cA==",
+            "https://github.com/DChartrain-3dArtist"
+            "https://dchartrain-3dartist.github.io/"
+            "https://www.youtube.com/@d.chartrain3dtechnicalarti873"
+        ],
+        "jobTitle": "Spécialiste en 3D, Interactif et Développement Web",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+        }
+    }
+    </script>
 </head>
+
 <body>
     <!-- Toggle pour afficher/masquer la sidebar -->
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -17,7 +90,7 @@
     <nav class="sidebar">
         <h2>MENU</h2>
         <ul>
-            <li><a href="/index.html">// Accueil</a></li>
+            <li><a href="/">// Accueil</a></li>
             <li><a href="/pages/portfolio.html">// Portfolio</a>
                 <ul>
                     <li><a href="/pages/image-de-synthese.html">- Images de synthèse</a></li>
@@ -56,31 +129,38 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="hero-contact">
-          <h1>Entrons en Contact</h1>
-          <h2>Discutons de Votre Prochain Projet</h2>
-          <p>
-            Vous avez une idée, un projet ou une question ? Je serais ravi de collaborer avec vous et de mettre mon expertise à votre service. 
-            Que ce soit pour un projet en modélisation 3D, une application interactive ou un développement web, n’hésitez pas à me contacter.
-          </p>
-        </section>
+        <header>
+            <h1 class="animate" data-animation="fade-up" data-delay="0.2s">Entrons en Contact</h1>
+            <h2>Discutons de Votre Prochain Projet</h2>
+            <p>
+                Vous avez une idée, un projet ou une question ? Je serais ravi de collaborer avec vous et de mettre mon expertise à votre service. 
+                Que ce soit pour un projet en modélisation 3D, une application interactive ou un développement web, n’hésitez pas à me contacter.
+            </p>
+        </header>
 
         <div class="separator"></div>
 
-        <!-- Description Section -->
-        <section id="description-contact">
-          <h2>Pourquoi me contacter ?</h2>
-          <ul>
-            <li><strong>Pour un projet :</strong> Discutons de vos besoins en création 3D, interactivité ou développement web.</li>
-            <li><strong>Pour une collaboration :</strong> Travaillons ensemble pour donner vie à vos idées.</li>
-            <li><strong>Pour des questions :</strong> Je suis disponible pour répondre à toutes vos interrogations concernant mes compétences ou mes réalisations.</li>
-          </ul>
+        <section class="SectionContact">
+            <div class="ContactContainer">
+                <h3>Contactez-moi pour vos projets&nbsp;3D</h3>
+                <p>Prêt à transformer vos idées en réalité ? Je suis à votre disposition pour discuter de vos besoins et pour établir une stratégie adaptée à votre projet. Rendez-vous dans la section Contact pour me joindre directement ou dans Compétences pour découvrir davantage mon parcours et mes qualifications.</p>
+
+                <div class="separator"></div>
+
+                <h4>Pourquoi me contacter ?</h4>
+                <ul>
+                  <li><span>Pour un projet :</span> Discutons de vos besoins en création 3D, interactivité ou développement web.</li>
+                  <li><span>Pour une collaboration :</span> Travaillons ensemble pour donner vie à vos idées.</li>
+                  <li><span>Pour des questions :</span> Je suis disponible pour répondre à toutes vos interrogations concernant mes compétences ou mes réalisations.</li>
+                </ul>
+            </div>
         </section>
+
 
         <div class="separator"></div>
       
         <!-- Contact Information Section -->
-        <section id="contact-info">
+        <section class="contactinfo">
           <h2>Informations de contact</h2>
           <p><strong>Email :</strong> <a href="mailto:donovan.chartrain@example.com">donovan.chartrain@example.com</a></p>
           <p><strong>Téléphone :</strong> <a href="tel:+33600000000">+33 (0)6 00 00 00 00</a></p>
@@ -91,30 +171,53 @@
       
         <!-- Contact Form Section -->
         <section id="contact-form">
-          <h2>Formulaire de Contact</h2>
-          <form action="https://formspree.io/f/your-email-endpoint" method="POST">
-            <label for="name">Nom (obligatoire)</label>
-            <input type="text" id="name" name="name" required>
-      
-            <label for="email">Email (obligatoire)</label>
-            <input type="email" id="email" name="email" required>
-      
-            <label for="subject">Sujet</label>
-            <input type="text" id="subject" name="subject">
-      
-            <label for="message">Message (obligatoire)</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-      
-            <button type="submit">Envoyer le Message</button>
-          </form>
-        </section>
+            <div class="ContactCards">
+                <h2>Formulaire de contact</h2>
+                <svg class="card__svg" viewBox="0 0 800 500">
+                    <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
+                    <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="#e5b97d" stroke-width="3" fill="transparent"/>
+                </svg>
+                <div class="ContactContent">
+                    <form action="https://formspree.io/f/xkgnayzy" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" " />
+                            <label for="name">Nom*</label>
+                        </div>
+        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder=" " />
+                            <label for="email">Email</label>
+                        </div>
+                    
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder=" " />
+                            <label for="phone">Telephone</label>
+                        </div>
+                    
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder=" " />
+                            <label for="subject">Sujet</label>
+                        </div>
+                    
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Message*</label>
+                        </div>
+                    
+                        <button type="submit">Envoyer le Message</button>
+        
+                        <p>* Champs obligatoires</p>
+                    </form>
+                </div>
+            </div>
+                </section>
       
         <div class="separator"></div>
       
         <!-- CTA Section -->
         <section id="cta-contact">
-          <a href="/portfolio.html" class="cta-button">Consulter Mon Portfolio</a>
-          <a href="/cv.pdf" class="cta-button">Télécharger Mon CV</a>
+          <a href="/portfolio.html" class="cta-button button">Consulter Mon Portfolio</a>
+          <a href="/cv.pdf" class="cta-button button">Télécharger Mon CV</a>
         </section>
       
         <div class="separator"></div>
@@ -149,7 +252,7 @@
                 <p class="copyright">Copyright 2024 © - Made with ❤️ by <a href="#">Donovan Chartrain</a></p>
             </div>
         </footer>
-      </main>
+    </main>
     
 </body>
 </html>
