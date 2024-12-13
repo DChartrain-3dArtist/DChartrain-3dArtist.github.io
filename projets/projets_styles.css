@@ -1,1 +1,21 @@
 /* --- Global Styles CSS pour les pages Projets --- */
+header {
+    padding: 30px;
+    width: 80%;
+}
+
+header h1 {
+    margin-bottom: 20%;
+    font-size: 28px;
+    letter-spacing: 7px;
+    line-height: 45px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    color: #e5b97d;
+}
+
+section {
+    padding: 30px;
+    width: 80%;
+}
