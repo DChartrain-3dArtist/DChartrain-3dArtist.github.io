@@ -19,3 +19,22 @@ header h1 {
     text-transform: uppercase;
     color: #e5b97d;
 }
+
+section {
+    padding: 30px;
+    width: 80%;
+}
+
+ul li strong {
+    color: #e5b97d;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #e5b97d;
+}
+
+p a {
+    text-decoration: none;
+    color: #e5b97d;
+}
