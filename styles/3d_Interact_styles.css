@@ -77,7 +77,7 @@ header h1 {
 .secteurCards{
     position: relative;
     background: #333;
-    height: 40vh;
+    height: 50vh;
     max-height: 550px;
     border-radius: 6px;
     padding: 2rem;
