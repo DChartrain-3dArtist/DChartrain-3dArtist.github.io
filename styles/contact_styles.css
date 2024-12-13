@@ -36,8 +36,7 @@ header h1 {
 .ContactCards {
     position: relative;
     background: #333;
-    height: 60vh;
-    max-height: 550px;
+    height: 600px;
     border-radius: 6px;
     padding: 30px;
     color: #aaa;
@@ -102,8 +101,8 @@ header h1 {
     border-bottom: 2px solid #e5b97d;
 }
 
-input,
-textarea {
+.form-group > input,
+.form-group > textarea {
     border: none;
     background-color: transparent;
     color: #bfbcb8;
@@ -112,7 +111,7 @@ textarea {
     resize: none;
 }
 
-label {
+.form-group > label {
     position: absolute;
     left: 5px;
     top: 10px;
@@ -122,22 +121,22 @@ label {
     pointer-events: none;
 }
 
-input:focus ~ label,
-textarea:focus ~ label,
-input:not(:placeholder-shown) ~ label,
-textarea:not(:placeholder-shown) ~ label {
+.form-group > input:focus ~ label,
+.form-group > textarea:focus ~ label,
+.form-group > input:not(:placeholder-shown) ~ label,
+.form-group > textarea:not(:placeholder-shown) ~ label {
     top: -10px;
     font-size: 12px;
     color: #e5b97d;
 }
 
-input:focus,
-textarea:focus {
+.form-group > input:focus,
+.form-group > textarea:focus {
     outline: none;
 }
 
-input::placeholder,
-textarea::placeholder {
+.form-group > input::placeholder,
+.form-group > textarea::placeholder {
     color: transparent;
 }
 
