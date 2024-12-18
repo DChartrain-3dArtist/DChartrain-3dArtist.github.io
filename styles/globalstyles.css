@@ -15,6 +15,11 @@ section {
     margin: 40px auto !important;
 }
 
+header {
+    max-width: 1700px;
+    margin: 40px auto;
+}
+
 .sidebar {
     position: fixed;
     top: 0;

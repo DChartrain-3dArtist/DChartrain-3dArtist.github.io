@@ -118,6 +118,8 @@ header h1 {
     align-items: center;
     flex-direction: column;
     margin: auto;
+    max-height: 1900px;
+    max-width: 900px;
 }
 
 .ProjectContainer h3 {
