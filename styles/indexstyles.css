@@ -217,6 +217,7 @@ h5 {
     grid-column-gap: 5px;
     grid-row-gap: 5px;
     margin: 50px auto;
+    max-width: 1080px;
 }
 
 .projectProduct {

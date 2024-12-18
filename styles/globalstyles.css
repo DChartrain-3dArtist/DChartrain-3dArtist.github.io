@@ -10,6 +10,10 @@ body, html {
     scroll-behavior: smooth;
 }
 
+section {
+    max-width: 1700px;
+    margin: 40px auto !important;
+}
 
 .sidebar {
     position: fixed;
