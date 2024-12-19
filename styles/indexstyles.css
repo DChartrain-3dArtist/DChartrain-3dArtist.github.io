@@ -47,6 +47,10 @@
     margin: 20px 0px;
 }
 
+.HeroSection .button {
+    margin: auto;
+}
+
 
 /* --- About Section --- */
 
@@ -352,6 +356,10 @@ h5 {
 
     .HeroSection {
         background-position: right center;
+    }
+
+    .HeroSection .button {
+        margin: 0 !important;
     }
 
 }
