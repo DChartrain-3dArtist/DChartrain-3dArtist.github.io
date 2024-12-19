@@ -123,6 +123,20 @@ h5 {
     padding: 0px 30px;
 }
 
+.Showreal{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Showreal iframe {
+    width: 100%;
+    max-width: 560px;
+}
+
 /* --- Secteur Section --- */
 
 .SecteurPanel {
