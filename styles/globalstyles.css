@@ -12,7 +12,7 @@ body, html {
 
 section {
     max-width: 1700px;
-    margin: 40px auto !important;
+    margin: 0px auto 40px auto !important;
 }
 
 header {
