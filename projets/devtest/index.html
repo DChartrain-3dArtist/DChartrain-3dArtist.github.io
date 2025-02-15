@@ -37,5 +37,19 @@
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
+
+    <script>
+      function resizeCanvas() {
+          let canvas = document.querySelector("#unity-canvas");
+          if (canvas) {
+              canvas.style.width = window.innerWidth + "px";
+              canvas.style.height = window.innerHeight + "px";
+          }
+      }
+
+      window.addEventListener("resize", resizeCanvas);
+      window.addEventListener("orientationchange", resizeCanvas);
+      document.addEventListener("DOMContentLoaded", resizeCanvas);
+    </script>
   </body>
 </html>
