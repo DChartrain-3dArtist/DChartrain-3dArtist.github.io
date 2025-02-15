@@ -39,17 +39,19 @@
     </script>
 
     <script>
-      function resizeCanvas() {
-          let canvas = document.querySelector("#unity-canvas");
-          if (canvas) {
-              canvas.style.width = window.innerWidth + "px";
-              canvas.style.height = window.innerHeight + "px";
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+          function resizeCanvas() {
+              let canvas = document.querySelector("#unity-canvas");
+              if (canvas) {
+                  canvas.style.width = window.innerWidth + "px";
+                  canvas.style.height = window.innerHeight + "px";
+              }
           }
-      }
 
-      window.addEventListener("resize", resizeCanvas);
-      window.addEventListener("orientationchange", resizeCanvas);
-      document.addEventListener("DOMContentLoaded", resizeCanvas);
+          window.addEventListener("resize", resizeCanvas);
+          window.addEventListener("orientationchange", resizeCanvas);
+          document.addEventListener("DOMContentLoaded", resizeCanvas);
+      }
     </script>
   </body>
 </html>
