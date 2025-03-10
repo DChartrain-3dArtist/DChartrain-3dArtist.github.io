@@ -2,6 +2,11 @@
 header {
     padding: 30px;
     width: 80%;
+    background-image: url(/assets/Hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
 
 header h1 {
@@ -18,4 +23,37 @@ header h1 {
 section {
     padding: 30px;
     width: 80%;
+}
+
+h3 {
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+    max-width: 1280px;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+    max-width: 1280px;
+}
+
+.Showreal{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Showreal iframe {
+    width: 100%;
+    max-width: 560px;
 }

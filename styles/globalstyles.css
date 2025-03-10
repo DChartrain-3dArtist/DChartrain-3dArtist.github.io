@@ -336,7 +336,10 @@ main::before {
     transform-style: flat;
     transition: all 0.5s ease;
     box-shadow: 0px 5px 20px -4px rgba(0, 0, 0, 0.91);
-    transform: translateZ(20px )
+    transform: translateZ(20px );
+    text-decoration: none;
+    color: #00000000;
+    font-size: 0;
 }
 
 .IconeGlass::after

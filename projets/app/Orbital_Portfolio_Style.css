@@ -1,0 +1,138 @@
+/* --- Unity Canvas --- */
+#container {
+    max-width: 960px;
+    max-height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#start-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#start-screen img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom:
+    20px;
+}
+
+#start-button {
+    position: absolute;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    background: #ff5722;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#start-button:hover {
+    background: #e64a19;
+}
+
+#unity-container {
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#unity-canvas { width: 100%; height: 100%; }
+
+/* --- Loader --- */
+
+.loader-container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.loader2{
+    display: block;
+    position: relative;
+    height: 32px;
+    width: 200px;
+    background: #bfbcb8;
+    border:2px solid #e5b97d;
+    border-radius: 5px;
+    color: #e5b97d;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 50px;
+
+}
+.loader2 .progress-bar{
+    background: #e5b97d;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.loader2 .progress-text{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #212121;
+    z-index: 1;
+}
+
+.loader3 {
+    width: 100px;
+    height: 100px;
+    background-color: #e5b97d;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 30px 4px rgba(0, 0, 0, 0.5) inset,
+        0 5px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+.loader3:before,
+.loader3:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 45%;
+    top: -40%;
+    background-color: #fff;
+    animation: wave 5s linear infinite;
+}
+.loader3:before {
+    border-radius: 30%;
+    background: rgba(255, 255, 255, 0.4);
+    animation: wave 5s linear infinite;
+}
+@keyframes wave {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
