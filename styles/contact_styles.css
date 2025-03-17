@@ -16,6 +16,10 @@ header h1 {
     color: #e5b97d;
 }
 
+.contactinfo a {
+    color: #e5b97d;
+}
+
 /* --- Section --- */ 
 
 .SectionContact, .contactinfo, #contact-form, #closing-message{

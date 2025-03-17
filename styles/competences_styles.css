@@ -21,10 +21,13 @@ header h1 {
 .SectionExpertise, .SectionVision, .SectionTools, .SectionValue, .SectionExperience, .SectionCV {
     width: 80%;
     margin: 30px auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .SectionExpertise img {
     width: 100%;
+    max-width: 530px;
     max-height: 300px;
     border-radius: 10px;
     margin: auto;

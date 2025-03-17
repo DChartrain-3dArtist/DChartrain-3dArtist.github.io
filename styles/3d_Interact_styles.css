@@ -20,6 +20,8 @@ header h1 {
 .SectionCompetence3D, .SectionMethode{
     width: 80%;
     margin: 30px auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .SectionCompetence3D h3 {
