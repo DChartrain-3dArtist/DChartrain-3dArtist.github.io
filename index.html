@@ -1,361 +1,129 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!---SIte Responsive développé en HTML, CSS et JS par Donovan Chartrain--->
-
-        <!-- Métadonnées essentielles -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Portfolio de Donovan Chartrain, spécialisé en 3D, applications interactives et développement web. Découvrez mes compétences et réalisations.">
-        <meta name="keywords" content="Portfolio, 3D, Développement Web, Animation 3D, Applications interactives, Unreal Engine, Unity, WebGL, Cinema 4D, Blender, WordPress, Divi, HTML, CSS, JavaScript, PHP">
-        <meta name="author" content="Donovan Chartrain">
-        <meta name="google-site-verification" content="qkjbZ8ruNArLLw_HQBb-kei4YWpM3s5cAZ2PUvwbzHY" />
-    
-        <!-- Titre de la page -->
-        <title>Donovan Chartrain - Designer 3D | Interactif & Développement Web</title>
-
-        <!-- Google Tag Manager -->
-        <script>
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-56CD5BKT');
-        </script>
-        <!-- End Google Tag Manager -->
-    
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" href="/assets/data/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/assets/data/favicon.svg" />
-        <link rel="shortcut icon" href="/assets/data/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/data/apple-touch-icon.png" />
-        <meta name="apple-mobile-web-app-title" content="Donovan Chartrain | Portfolio" />
-        <link rel="manifest" href="/assets/data/site.webmanifest" />
-    
-        <!-- Réseaux sociaux (Open Graph) -->
-        <meta property="og:title" content="Donovan Chartrain - Designer 3D | Interactif & Développement Web">
-        <meta property="og:description" content="Découvrez mes compétences en modélisation 3D, animation, développement interactif et création de sites web.">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://dchartrain-3dartist.github.io/">
-        <meta property="og:image" content="https://dchartrain-3dartist.github.io/assets/data/Opengraph.jpg">
-        <meta property="og:locale" content="fr_FR">
-        <meta property="og:logo" content="https://dchartrain-3dartist.github.io/assets/data/favicon.svg" />
-    
-        <!-- Twitter Cards -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Donovan Chartrain - 3D, Interactif & Développement Web">
-        <meta name="twitter:description" content="Découvrez mes compétences en modélisation 3D, animation, développement interactif et création de sites web.">
-        <meta name="twitter:image" content="https://dchartrain-3dartist.github.io/assets/data/Opengraph.jpg">
-    
-        <!-- Canonical URL -->
-        <link rel="canonical" href="https://dchartrain-3dartist.github.io/">
-    
-        <!-- Feuilles de styles -->
-        <link rel="stylesheet" href="/styles/globalstyles.css">
-        <link rel="stylesheet" href="/styles/indexstyles.css">
-        <link rel="stylesheet" href="/styles/animation.css">
-
-        <!-- Polices Google -->
-        <link href="https://fonts.googleapis.com/css2?family=Anta&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Share+Tech&display=swap" rel="stylesheet">
-    
-        <!-- Scripts JavaScript -->
-        <script defer src="/scripts/anim_observer.js"></script>
-    
-        <!-- Balises pour la performance -->
-        <meta name="theme-color" content="#141414">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-        <!-- Schema.org pour le SEO -->
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Donovan Chartrain",
-            "url": "https://dchartrain-3dartist.github.io/",
-            "sameAs": [
-                "www.linkedin.com/in/donovan-chartrain-63686a138",
-                "https://www.instagram.com/3dc_effect?igsh=MXd1NTBob2Zmdmx5cA==",
-                "https://github.com/DChartrain-3dArtist",
-                "https://dchartrain-3dartist.github.io/",
-                "https://www.youtube.com/@d.chartrain3dtechnicalarti873"
-            ],
-            "jobTitle": "Spécialiste en 3D, Interactif et Développement Web",
-            "worksFor": {
-                "@type": "Organization",
-                "name": "Freelance"
-            }
-        }
-        </script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Portefeuille de Donovan Chartrain - Développeur 3D et web" />
+<meta property="og:title" content="Donovan Chartrain - Portfolio 3D" />
+<meta property="og:description" content="Découvrez ma nouvelle version ou revenez à l’ancienne." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://dchartrain-3dartist.github.io/assets/hero.png" />
+<title>Donovan Chartrain - Portfolio</title>
+<style>
+  /* Reset & base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body, html {
+    margin: 0; padding: 0;
+    height: 100%;
+    font-family: "Anta", sans-serif, sans-serif;
+    background-color: #141414;
+    color: #bfbcb8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /* Hero background */
+  body {
+    background: url('https://dchartrain-3dartist.github.io/assets/hero.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+  }
+  /* Overlay */
+  body::before {
+    content: "";
+    position: fixed;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(20, 20, 20, 0.8);
+    z-index: 0;
+  }
+  /* Main container */
+  main {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  h1 {
+    font-weight: 800;
+    font-size: 3.5rem;
+    margin: 0 0 0.3em 0;
+    color: #e5b97d;
+    text-shadow: 0 0 8px #e5b97d;
+  }
+  p {
+    max-width: 500px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 0 0 2em 0;
+    color: #bfbcb8;
+  }
+  /* Buttons container */
+  .buttons {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* Buttons style */
+  .button {
+    padding: 15px 30px;
+    border: 2px solid #2c2c2c;
+    background-color: #1a1a1a;
+    color: #bfbcb8;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+      2px 2px 7px #090909,
+      -2px -2px 7px #525252;
+    transition: background 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+    user-select: none;
+  }
+  .button:hover,
+  .button:focus {
+    background-color: #292929;
+    color: #e5b97d;
+    border-color: #666666;
+    outline: none;
+  }
+  /* Responsive */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.4rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .buttons {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .button {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+</style>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56CD5BKT"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <!-- Toggle pour afficher/masquer la sidebar -->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="menu-toggle-label">
-        <span class="hamburger"></span>
-    </label>
-
-    <!-- Menu Sidebar -->
-    <nav class="sidebar">
-        <h2>MENU</h2>
-        <ul>
-            <li><a href="/">// Accueil</a></li>
-            <li><a href="/pages/portfolio.html">// Portfolio</a>
-                <ul>
-                    <li><a href="/pages/image-de-synthese.html">- Images de synthèse</a></li>
-                    <li><a href="/pages/3d-interactif.html">- 3D Interactif</a></li>
-                    <li><a href="/pages/developpement-web.html">- Développement Web</a></li>
-                </ul>
-            </li>
-            <li><a href="/pages/competences.html">// Compétences</a>
-                <ul>
-                    <li><a href="/pages/competences.html#MonCv">- Mon CV</a></li>
-                </ul>
-            </li>
-            <li><a href="/pages/contact.html">// Contact</a></li>
-        </ul>
-        <div class="separator"></div>
-            <div class="PanelRS">
-                <a href="https://www.linkedin.com/in/donovan-chartrain-63686a138" class="IconeGlass IcoLDNGlass"> <!-- Icone LinckedIn -->
-                    <svg class="IcoLDN" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-                </a>
-                <a href="https://www.instagram.com/3dc_effect?igsh=MXd1NTBob2Zmdmx5cA==" class="IconeGlass IcoInstaGlass"> <!-- Icone Instagram -->
-                    <svg class="IcoInsta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                </a>
-                <a href="https://www.youtube.com/@d.chartrain3dtechnicalarti873" class="IconeGlass IcoYoutubeGlass"> <!-- Icone Youtube -->
-                    <svg class="IcoYoutube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
-                </a>
-                <a href="https://github.com/DChartrain-3dArtist" class="IconeGlass IcoGithubGlass"> <!-- Icone Github -->
-                    <svg class="IcoGithub" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM265.8 407.7c0-1.8 0-6 .1-11.6c.1-11.4 .1-28.8 .1-43.7c0-15.6-5.2-25.5-11.3-30.7c37-4.1 76-9.2 76-73.1c0-18.2-6.5-27.3-17.1-39c1.7-4.3 7.4-22-1.7-45c-13.9-4.3-45.7 17.9-45.7 17.9c-13.2-3.7-27.5-5.6-41.6-5.6s-28.4 1.9-41.6 5.6c0 0-31.8-22.2-45.7-17.9c-9.1 22.9-3.5 40.6-1.7 45c-10.6 11.7-15.6 20.8-15.6 39c0 63.6 37.3 69 74.3 73.1c-4.8 4.3-9.1 11.7-10.6 22.3c-9.5 4.3-33.8 11.7-48.3-13.9c-9.1-15.8-25.5-17.1-25.5-17.1c-16.2-.2-1.1 10.2-1.1 10.2c10.8 5 18.4 24.2 18.4 24.2c9.7 29.7 56.1 19.7 56.1 19.7c0 9 .1 21.7 .1 30.6c0 4.8 .1 8.6 .1 10c0 4.3-3 9.5-11.5 8C106 393.6 59.8 330.8 59.8 257.4c0-91.8 70.2-161.5 162-161.5s166.2 69.7 166.2 161.5c.1 73.4-44.7 136.3-110.7 158.3c-8.4 1.5-11.5-3.7-11.5-8zm-90.5-54.8c-.2-1.5 1.1-2.8 3-3.2c1.9-.2 3.7 .6 3.9 1.9c.3 1.3-1 2.6-3 3c-1.9 .4-3.7-.4-3.9-1.7zm-9.1 3.2c-2.2 .2-3.7-.9-3.7-2.4c0-1.3 1.5-2.4 3.5-2.4c1.9-.2 3.7 .9 3.7 2.4c0 1.3-1.5 2.4-3.5 2.4zm-14.3-2.2c-1.9-.4-3.2-1.9-2.8-3.2s2.4-1.9 4.1-1.5c2 .6 3.3 2.1 2.8 3.4c-.4 1.3-2.4 1.9-4.1 1.3zm-12.5-7.3c-1.5-1.3-1.9-3.2-.9-4.1c.9-1.1 2.8-.9 4.3 .6c1.3 1.3 1.8 3.3 .9 4.1c-.9 1.1-2.8 .9-4.3-.6zm-8.5-10c-1.1-1.5-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3c1.1 1.5 1.1 3.3 0 4.1c-.9 .6-2.6 0-3.7-1.5zm-6.3-8.8c-1.1-1.3-1.3-2.8-.4-3.5c.9-.9 2.4-.4 3.5 .6c1.1 1.3 1.3 2.8 .4 3.5c-.9 .9-2.4 .4-3.5-.6zm-6-6.4c-1.3-.6-1.9-1.7-1.5-2.6c.4-.6 1.5-.9 2.8-.4c1.3 .7 1.9 1.8 1.5 2.6c-.4 .9-1.7 1.1-2.8 .4z"/></svg>
-                </a>
-            </div>
-
-    </nav>
-
-    <!-- Contenu principal -->
-    <main>
-        <header class="HeroSection">
-            <div class="HeroText">
-                <h1 class="animate" data-animation="fade-up" data-delay="0.2s">Donovan <br> Chartrain</h1>
-                <h2 class="animate" data-animation="fade-up" data-delay="0.2s">Spécialiste 3D <br> Applications Interactives <br> Développement web</h2>      
-            </div>
-            <p>Explorez l’avenir de la 3D et du développement interactif à travers mes projets. <br>
-                <br>
-                Spécialisé dans la modélisation, les expériences interactives et la création de sites web, je mets mon expertise au service de l’innovation dans l’architecture, l’industrie et la communication.
-            </p>
-            <a class="button" href="#ProjectSection"> Voir mes projets</a>
-        </header>
-
-        <div class="separator"></div>
-        
-        <section class="AboutSection">
-            <div>
-                <h3>Découvrez-moi</h3>
-            </div>
-            <div class="AboutContent">
-                <img id="personaleimage" src="assets/ProfilImage.png" alt="Donovan Chartrain Profil Images" width="165" height="189">
-                <div class="Verticalseparator"></div>
-                <div>
-                    <h4> Donovan Chartrain</h4>
-                    <h5>- Création 3D <br>- Interactivité<br>- Développeur web</h5>
-                </div>
-            </div>
-            <p>Bienvenue sur mon site portfolio dédié à la 3D et au développement interactif.</p>
-
-            <p>Découvrez mes compétences en modélisation 3D, animation, expériences interactives et création de sites web. Confiez vos projets à un professionnel polyvalent et passionné par l’innovation numérique.</p>
-
-            <p>Spécialisé dans la création de visuels en images de synthèse, d’animations 3D immersives, d’applications interactives, et de solutions web, je mets à votre disposition une expertise technique et créative pour répondre à vos besoins dans les secteurs de l’architecture, de l’industrie et de la communication.</p>
-
-            <img class="Logosoft animate" data-animation="opacity" data-delay="0.2s" src="/assets/Logosoft.png" alt="Donovan chartrain Logiciel Logo">
-            
-            <h5>Pourquoi ce portfolio ?</h5><br>
-            <p>Un portfolio est une galerie d’images, de vidéos et de projets interactifs permettant de présenter les réalisations d’un professionnel au fil de son parcours. Il constitue une vitrine de mes compétences et de mon savoir-faire, vous offrant un aperçu concret des solutions que je peux apporter à vos projets.<br>
-            Ce « book numérique » est régulièrement mis à jour pour intégrer de nouvelles créations et refléter mon évolution dans les domaines de la 3D, des applications interactives et du web.</p>
-            <p>Ce portfolio vous permet d’explorer mes réalisations, d’en apprendre davantage sur mes compétences et d’accéder à des projets concrets qui illustrent ma maîtrise des outils et des technologies. Que vous recherchiez une solution innovante, un design sur-mesure ou un accompagnement dans vos projets numériques, je suis à votre écoute.</p>
-            <div class="Showreal">
-                <h5>Découvrez ma démo en vidéo</h5>
-                <iframe id="ytplayer" width="560" height="315" src="https://www.youtube-nocookie.com/embed/FAJsUI9OTsk?si=Qjq05r7voGP7zaHI" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="separator"></div>
-            <p>Vous avez une idée ou un projet ? N’hésitez pas à me contacter pour en discuter !</p>
-            <a class="button" href="/pages/contact.html">Contactez-moi</a>
-        </section>
-
-        <div class="separator"></div>
-        
-        <section class="SecteurSection">
-            <div class="SecteurContent">
-                <h3>Secteur d'activité</h3>
-                <p>Naviguez par domaine :<br>
-                    <br>
-                    <span>Image de synthèse 3D :</span> Modélisation, animation et rendus photo-réalistes.<br>
-                    <br>
-                    <span>Applications interactives :</span> Configurateurs 3D, expériences immersives et applications web interactives. <br>
-                    <br>
-                    <span>Développement web :</span> Sites vitrines, applications dynamiques et solutions sur mesure. <br>
-                    <br>
-                    Chacune de ces catégories est accompagnée d’une présentation détaillée de mes projets spécifiques, que vous pouvez explorer pour en apprendre davantage sur mes réalisations dans chaque domaine.
-                    <br>
-                    Vous souhaitez en savoir plus ? Rendez-vous dans les sections dédiées à chaque domaine ou contactez-moi pour discuter de votre projet !
-                </p>
-            </div>
-            <div class="SecteurPanel">
-
-                <div class="secteurCards animate" data-animation="fade-left" data-delay="0.3s">
-                    <div class="S_cards_img_Container">
-                        <img src="/projets/projet_asset/Rendre_scene4.png" alt="Secteur Image De image-de-synthese" width="1280" height="720">
-                    </div>
-                    <svg class="card__svg" viewBox="0 0 800 500">
-                        <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
-                        <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="#e5b97d" stroke-width="3" fill="transparent"/>
-                    </svg>   
-                    <div class="card__content">
-                    <h4>Maîtrise de l'image de synthèse :<br> Donnez vie à vos idées en 3D</h4>
-                    <p>Découvrez mes compétences en création de visuels 3D photoréalistes et animations techniques au service de l'architecture, de l'industrie et de la communication.</p> 
-                    <a class="button" href="/pages/image-de-synthese.html"> En savoir plus</a>
-                    </div>        
-                </div>
-    
-                <div class="secteurCards animate" data-animation="fade-right" data-delay="0.3s">
-                    <div class="S_cards_img_Container">
-                        <img src="/projets/projet_asset/CarImages.png" alt="Secteur Application 3D Interactif" width="1280" height="720">
-                    </div>
-                    <svg class="card__svg" viewBox="0 0 800 500">
-                        <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
-                        <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="#e5b97d" stroke-width="3" fill="transparent"/>
-                    </svg>   
-                    <div class="card__content">
-                    <h4>Applications 3D interactives :<br> Immersion et innovation</h4>
-                    <p>Explorez mes compétences dans la conception d'expériences interactives, configurateurs 3D et visites virtuelles adaptées aux plateformes PC, mobile et Web.</p> 
-                    <a class="button" href="/pages/3d-interactif.html"> En savoir plus</a>
-                    </div>        
-                </div>
-    
-                <div class="secteurCards animate" data-animation="fade-left" data-delay="0.3s">
-                    <div class="S_cards_img_Container">
-                        <img src="/assets/SectionDevWeb.png" alt="Secteur Developpement Web" width="1280" height="720">
-                    </div>
-                    <svg class="card__svg" viewBox="0 0 800 500">
-                        <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
-                        <path class="card__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="#e5b97d" stroke-width="3" fill="transparent"/>
-                    </svg>   
-                    <div class="card__content">
-                    <h4>Développement web :<br> Allier design et performance</h4>
-                    <p>Découvrez mes réalisations web combinant créativité et technologies avancées pour des expériences utilisateur optimales.</p> 
-                    <a class="button" href="/pages/developpement-web.html"> En savoir plus</a>
-                    </div>        
-                </div>
-            </div>
-        </section>
-
-        <div class="separator"></div>
-
-        <section class="SectionProject" id="ProjectSection">
-            <div>
-                <h3>Decouvrez mes projets</h3>
-            </div>
-            <p>Créateur d’expériences visuelles et interactives, spécialisé en modélisation 3D, développement d’applications interactives et web design. Découvrez mes projets dans les secteurs de l’architecture, de l’industrie et de la communication.</p>
-
-            <div class="ProjectGrid">
-                <div class="ProjectCard1 projectProduct">
-                    <a href="/projets/3d/showreal.html"> 
-                        <img src="/projets/projet_asset/Scene2Showreal.webp" alt="Showreal 2025 de Donovan Chartrain Animation 3D">
-                        <h4>Showreel 2025</h4>
-                    </a>
-                </div>
-                <div class="ProjectCard2 projectProduct">
-                    <a href="/projets/3d/architectural_rendering.html"> 
-                        <img src="/projets/projet_asset/Archi_1.png" alt="Projet Rendu Architectural">
-                        <h4>Rendu architectural</h4>
-                    </a>
-                </div>
-                <div class="ProjectCard3 projectProduct">
-                    <a href="/projets/3d/product_rendering.html">
-                        <img src="/projets/projet_asset/Render_sceneIntro.Webp" alt="Mockup produit 3D et image de synthèse">
-                        <h4>Mockup produit</h4>
-                    </a>
-                </div>
-                <div class="ProjectCard4 projectProduct">
-                    <a href="/projets/3d/animation3d_environement.html">
-                        <img src="/projets/projet_asset/AnimationApt.png" alt="Environement 3D Immersif et réaliste pour la ville de Apt">
-                        <h4>Environement 3D Apt</h4>
-                    </a>
-                </div>
-                <div class="ProjectCard5 projectProduct">
-                    <a href="/projets/web/grapheau_project.html">
-                        <img src="/projets/projet_asset/Grapheau_Accueil.webp" alt="Création du site Web Grapheau.fr">
-                        <h4>Grapheau.fr</h4>
-                    </a>
-                </div>
-                <div class="ProjectCard6 projectProduct">
-                    <a href="/projets/3d/animation3d.html"> 
-                        <img src="/projets/projet_asset/CarImages.png" alt="Projet Animation 3D">
-                        <h4>Animation 3D</h4>
-                    </a>
-                </div>
-            </div>
-            
-            <a class="button" href="/pages/portfolio.html"> Voir plus</a>
-
-        </section>
-
-        <div class="separator"></div>
-
-        <section class="SectionContact">
-            <div class="ContactContainer">
-                <h3>Entrons en contact</h3>
-                <p>
-                    Vous avez une idée, un projet ou une question ? Je serais ravi de collaborer avec vous et de mettre mon expertise à votre service. 
-                    Que ce soit pour un projet en modélisation 3D, une application interactive ou un développement web, n’hésitez pas à me contacter.
-                </p>
-
-                <div class="separator"></div>
-
-                <h4>Pourquoi me contacter ?</h4>
-                <ul>
-                  <li><span>Pour un projet :</span> Discutons de vos besoins en création 3D, interactivité ou développement web.</li>
-                  <li><span>Pour une collaboration :</span> Travaillons ensemble pour donner vie à vos idées.</li>
-                  <li><span>Pour des questions :</span> Je suis disponible pour répondre à toutes vos interrogations concernant mes compétences ou mes réalisations.</li>
-                </ul>
-                <a class="button" href="/pages/contact.html">Contactez-moi</a>
-            </div>
-        </section>
-
-        <div class="separator"></div>
-
-        <footer>
-            <p>Restons connectés ! <br>
-                <br>
-                Suivez-moi pour les dernières mises à jour, projets en cours et inspirations.</p>
-            <div class="PanelRS">
-                <a href="https://www.linkedin.com/in/donovan-chartrain-63686a138" class="IconeGlass IcoLDNGlass">Linkedin <!-- Icone LinckedIn -->
-                    <svg class="IcoLDN" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-                </a>
-                <a href="https://www.instagram.com/3dc_effect?igsh=MXd1NTBob2Zmdmx5cA==" class="IconeGlass IcoInstaGlass">Instagram <!-- Icone Instagram -->
-                    <svg class="IcoInsta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                </a>
-                <a href="https://www.youtube.com/@d.chartrain3dtechnicalarti873" class="IconeGlass IcoYoutubeGlass">Youtube <!-- Icone Youtube -->
-                    <svg class="IcoYoutube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
-                </a>
-                <a href="https://github.com/DChartrain-3dArtist" class="IconeGlass IcoGithubGlass">Github <!-- Icone Github -->
-                    <svg class="IcoGithub" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM265.8 407.7c0-1.8 0-6 .1-11.6c.1-11.4 .1-28.8 .1-43.7c0-15.6-5.2-25.5-11.3-30.7c37-4.1 76-9.2 76-73.1c0-18.2-6.5-27.3-17.1-39c1.7-4.3 7.4-22-1.7-45c-13.9-4.3-45.7 17.9-45.7 17.9c-13.2-3.7-27.5-5.6-41.6-5.6s-28.4 1.9-41.6 5.6c0 0-31.8-22.2-45.7-17.9c-9.1 22.9-3.5 40.6-1.7 45c-10.6 11.7-15.6 20.8-15.6 39c0 63.6 37.3 69 74.3 73.1c-4.8 4.3-9.1 11.7-10.6 22.3c-9.5 4.3-33.8 11.7-48.3-13.9c-9.1-15.8-25.5-17.1-25.5-17.1c-16.2-.2-1.1 10.2-1.1 10.2c10.8 5 18.4 24.2 18.4 24.2c9.7 29.7 56.1 19.7 56.1 19.7c0 9 .1 21.7 .1 30.6c0 4.8 .1 8.6 .1 10c0 4.3-3 9.5-11.5 8C106 393.6 59.8 330.8 59.8 257.4c0-91.8 70.2-161.5 162-161.5s166.2 69.7 166.2 161.5c.1 73.4-44.7 136.3-110.7 158.3c-8.4 1.5-11.5-3.7-11.5-8zm-90.5-54.8c-.2-1.5 1.1-2.8 3-3.2c1.9-.2 3.7 .6 3.9 1.9c.3 1.3-1 2.6-3 3c-1.9 .4-3.7-.4-3.9-1.7zm-9.1 3.2c-2.2 .2-3.7-.9-3.7-2.4c0-1.3 1.5-2.4 3.5-2.4c1.9-.2 3.7 .9 3.7 2.4c0 1.3-1.5 2.4-3.5 2.4zm-14.3-2.2c-1.9-.4-3.2-1.9-2.8-3.2s2.4-1.9 4.1-1.5c2 .6 3.3 2.1 2.8 3.4c-.4 1.3-2.4 1.9-4.1 1.3zm-12.5-7.3c-1.5-1.3-1.9-3.2-.9-4.1c.9-1.1 2.8-.9 4.3 .6c1.3 1.3 1.8 3.3 .9 4.1c-.9 1.1-2.8 .9-4.3-.6zm-8.5-10c-1.1-1.5-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3c1.1 1.5 1.1 3.3 0 4.1c-.9 .6-2.6 0-3.7-1.5zm-6.3-8.8c-1.1-1.3-1.3-2.8-.4-3.5c.9-.9 2.4-.4 3.5 .6c1.1 1.3 1.3 2.8 .4 3.5c-.9 .9-2.4 .4-3.5-.6zm-6-6.4c-1.3-.6-1.9-1.7-1.5-2.6c.4-.6 1.5-.9 2.8-.4c1.3 .7 1.9 1.8 1.5 2.6c-.4 .9-1.7 1.1-2.8 .4z"/></svg>
-                </a>
-            </div>
-
-            <div class="footerbottom">
-                <p class="copyright">Copyright 2024 © - Made with ❤️ by <a href="/">Donovan Chartrain</a></p>
-                <a href="/pages/politicprivacy.html">Mentions Legales</a>
-                <a href="/pages/plan_du_site.html">Plan du Site</a>
-            </div>
-        </footer>
-    </main>
+<main role="main" aria-label="Page d'accueil - Portfolio Donovan Chartrain">
+  <h1>Bienvenue sur mon portfolio</h1>
+  <p>Découvrez la nouvelle version de mon site, ou revenez à l’ancienne version si vous préférez.</p>
+  <nav class="buttons" aria-label="Navigation principale">
+    <a href="https://donovan-dev3d.vercel.app" class="button" target="_blank" rel="noopener noreferrer">Découvrir la nouvelle version</a>
+    <a href="index_old.html" class="button">Continuer vers l’ancienne version</a>
+  </nav>
+</main>
 </body>
 </html>
