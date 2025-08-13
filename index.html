@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<meta name="robots" content="noindex, nofollow">
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Portefeuille de Donovan Chartrain - Développeur 3D et web" />
-<meta property="og:title" content="Donovan Chartrain - Portfolio 3D" />
-<meta property="og:description" content="Découvrez ma nouvelle version ou revenez à l’ancienne." />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="https://dchartrain-3dartist.github.io/assets/hero.png" />
 <title>Donovan Chartrain - Portfolio</title>
+<meta http-equiv="refresh" content="5; url=https://donovan-dev3d.vercel.app">
 <style>
   /* Reset & base */
   *, *::before, *::after {
@@ -118,12 +116,30 @@
 </head>
 <body>
 <main role="main" aria-label="Page d'accueil - Portfolio Donovan Chartrain">
-  <h1>Bienvenue sur mon portfolio</h1>
-  <p>Découvrez la nouvelle version de mon site, ou revenez à l’ancienne version si vous préférez.</p>
+  <h1>Redirection vers le nouveau site</h1>
+  <p>Vous allez être redirigé(e) vers mon nouveau site dans <span id="count">5</span> secondes.</p>
   <nav class="buttons" aria-label="Navigation principale">
-    <a href="https://donovan-dev3d.vercel.app" class="button" target="_blank" rel="noopener noreferrer">Découvrir la nouvelle version</a>
-    <a href="index_old.html" class="button">Continuer vers l’ancienne version</a>
+    <a href="https://donovan-dev3d.vercel.app" class="button" rel="noopener noreferrer">Aller maintenant</a>
+    <a href="/index-old.html" class="button">Accéder à l’ancienne version</a>
   </nav>
 </main>
+<script>
+  (function(){
+    var seconds = 5;
+    var el = document.getElementById('count');
+    var timer = setInterval(function(){
+      seconds -= 1;
+      if (el) el.textContent = String(seconds);
+      if (seconds <= 0){
+        clearInterval(timer);
+        window.location.replace('https://donovan-dev3d.vercel.app');
+      }
+    }, 1000);
+  })();
+</script>
 </body>
 </html>
+
+
+
+
