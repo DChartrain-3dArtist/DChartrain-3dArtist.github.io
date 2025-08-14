@@ -4,10 +4,10 @@
     justify-content: center;
     align-items: flex-start;
     text-align: center;
-    padding: 20px 0px 0px 20px;
+    padding: var(--space-lg) 0 0 var(--space-lg);
     position: relative;
     background-image: url(/assets/hero.png);
-    background-size: 150vh;
+    background-size: 130vh;
     background-position: 20% 40%;
     background-repeat: no-repeat;
 }
@@ -15,36 +15,36 @@
 .HeroText {
 
     width: 90%;
-    max-width: 450px;
-    padding: 10px;
+    max-width: 520px;
+    padding: var(--space-sm);
     text-transform: uppercase;
 }
 
 .HeroText h1 {
-    margin-bottom: 20%;
-    font-size: 40px;
-    letter-spacing: 7px;
-    line-height: 45px;
+    margin-bottom: 16%;
+    font-size: var(--fs-h1);
+    letter-spacing: 6px;
+    line-height: 1.1;
     font-weight: 400;
     text-align: left;
     text-transform: uppercase;
-    color: #e5b97d;
+    color: var(--color-accent);
 }
 
 .HeroText h2 {
-    font-size: 24px;
-    letter-spacing: 3px;
+    font-size: var(--fs-h2);
+    letter-spacing: 2px;
     font-weight: 400;
     text-align: left;
-    color: #e5b97d;
+    color: var(--color-accent);
     text-transform: none;
-    line-height: 35px;
+    line-height: 1.4;
 }
 
 .HeroSection p {
     text-align: left;
-    padding: 0px 20px;
-    margin: 20px 0px;
+    padding: 0 var(--space-lg);
+    margin: var(--space-md) 0;
 }
 
 .HeroSection .button {
@@ -281,10 +281,10 @@ h5 {
     text-align: center;
     color: #bfbcb8;
     z-index: 10;
-    transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease ;
     -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .ProjectCard1 {

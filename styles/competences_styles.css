@@ -1,26 +1,26 @@
 /* --- Hero Section --- */
 
 header {
-    padding: 30px;
+    padding: var(--space-xl);
     width: 80%;
 }
 
 header h1 {
-    margin-bottom: 20%;
-    font-size: 30px;
-    letter-spacing: 7px;
-    line-height: 45px;
+    margin-bottom: 16%;
+    font-size: var(--fs-h1);
+    letter-spacing: 6px;
+    line-height: 1.1;
     font-weight: 400;
     text-align: left;
     text-transform: uppercase;
-    color: #e5b97d;
+    color: var(--color-accent);
 }
 
 /* --- Section --- */
 
 .SectionExpertise, .SectionVision, .SectionTools, .SectionValue, .SectionExperience, .SectionCV {
     width: 80%;
-    margin: 30px auto;
+    margin: var(--space-xl) auto;
     display: flex;
     flex-direction: column;
 }
@@ -29,18 +29,18 @@ header h1 {
     width: 100%;
     max-width: 530px;
     max-height: 300px;
-    border-radius: 10px;
+    border-radius: var(--radius-md);
     margin: auto;
-    border: 1px solid #e5b97d;
+    border: 1px solid rgba(229, 185, 125, 0.25);
     margin-bottom: 20px;
 }
 
 
 h3 {
-    color: #e5b97d;
+    color: var(--color-accent);
 }
 
 ul li p span {
-    color: #e5b97d;
+    color: var(--color-accent);
     font-weight: bold;
 }

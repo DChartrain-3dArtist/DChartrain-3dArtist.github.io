@@ -1,5 +1,5 @@
 header {
-    padding: 30px;
+    padding: var(--space-xl);
     width: 80%;
     margin: 0 auto;
     height: 90vh;
@@ -10,31 +10,31 @@ header {
 }
 
 header h1 {
-    margin-bottom: 20%;
-    font-size: 100px;
-    letter-spacing: 7px;
-    line-height: 45px;
+    margin-bottom: 16%;
+    font-size: clamp(48px, 8vw, 100px);
+    letter-spacing: 6px;
+    line-height: 1.05;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
-    color: #e5b97d;
+    color: var(--color-accent);
 }
 
 section {
-    padding: 30px;
+    padding: var(--space-xl);
     width: 80%;
 }
 
 ul li strong {
-    color: #e5b97d;
+    color: var(--color-accent);
 }
 
 ul li a {
     text-decoration: none;
-    color: #e5b97d;
+    color: var(--color-accent);
 }
 
 p a {
     text-decoration: none;
-    color: #e5b97d;
+    color: var(--color-accent);
 }

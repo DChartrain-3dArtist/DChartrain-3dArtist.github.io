@@ -1,30 +1,30 @@
 /* --- Hero Section --- */
 
 header {
-    padding: 30px;
+    padding: var(--space-xl);
     width: 80%;
 }
 
 header h1 {
-    margin-bottom: 20%;
-    font-size: 30px;
-    letter-spacing: 7px;
-    line-height: 45px;
+    margin-bottom: 16%;
+    font-size: var(--fs-h1);
+    letter-spacing: 6px;
+    line-height: 1.1;
     font-weight: 400;
     text-align: left;
     text-transform: uppercase;
-    color: #e5b97d;
+    color: var(--color-accent);
 }
 
 .contactinfo a {
-    color: #e5b97d;
+    color: var(--color-accent);
 }
 
 /* --- Section --- */ 
 
 .SectionContact, .contactinfo, #contact-form, #closing-message{
     width: 80%;
-    margin: 30px auto;
+    margin: var(--space-xl) auto;
 }
 
 #cta-contact {
@@ -39,14 +39,14 @@ header h1 {
 
 .ContactCards {
     position: relative;
-    background: #333;
+    background: var(--color-surface-2);
     height: 600px;
-    border-radius: 6px;
+    border-radius: var(--radius-lg);
     padding: 30px;
-    color: #aaa;
+    color: var(--color-text-muted);
     overflow: hidden;
     margin: 30px auto;
-    border: 2px solid #e5b97d;
+    border: 1px solid rgba(229, 185, 125, 0.2);
     width: 80%;
     max-width: 580px;
 }
@@ -145,19 +145,19 @@ header h1 {
 }
 
 .ContactContent form button {
-    border: 2px solid #e5b97d;
+    border: 1px solid rgba(229, 185, 125, 0.6);
     background-color: transparent;
-    color: #bfbcb8;
+    color: var(--color-text);
     transition: all 0.3s ease;
     margin: auto;
     margin-top: 20px;
-    border-radius: 10px;
+    border-radius: var(--radius-md);
     font-size: 20px;
     padding: 5px;
 }
 
 .ContactContent form button:hover {
-    background-color: #e5b97d;
+    background-color: var(--color-accent);
     color: #212121;
 }
 

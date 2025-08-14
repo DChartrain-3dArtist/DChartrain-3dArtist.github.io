@@ -1,52 +1,52 @@
 /* --- Hero Section --- */
 
 header {
-    padding: 30px;
+    padding: var(--space-xl);
     width: 80%;
 }
 
 header h1 {
-    margin-bottom: 20%;
-    font-size: 30px;
-    letter-spacing: 7px;
-    line-height: 45px;
+    margin-bottom: 16%;
+    font-size: var(--fs-h1);
+    letter-spacing: 6px;
+    line-height: 1.1;
     font-weight: 400;
     text-align: left;
     text-transform: uppercase;
-    color: #e5b97d;
+    color: var(--color-accent);
 }
 
 /* --- Section --- */ 
 .SectionCompetence3D, .SectionMethode{
     width: 80%;
-    margin: 30px auto;
+    margin: var(--space-xl) auto;
     display: flex;
     flex-direction: column;
 }
 
 .SectionCompetence3D h3 {
-    color: #e5b97d;
+    color: var(--color-accent);
 }
 
 .SectionMethode p span {
-    color: #e5b97d;
+    color: var(--color-accent);
 }
 
 .SectionCompetence3D p span {
-    color: #e5b97d;
+    color: var(--color-accent);
 }
 
 .SectionCompetence3D img {
     width: 100%;
     height: auto;
     max-width: 960px;
-    border-radius: 10px;
+    border-radius: var(--radius-md);
     margin: auto;
-    border: 1px solid #e5b97d;
+    border: 1px solid rgba(229, 185, 125, 0.25);
 }
 .SecteurPanel {
     width: 90%;
-    padding: 20px;
+    padding: var(--space-lg);
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -59,13 +59,13 @@ header h1 {
     justify-content: center;
     align-items: center;
     text-align: left;
-    padding: 0px 30px;
+    padding: 0 var(--space-xl);
 }
 
 .SecteurContent h3{
-    font-size: 24px;
+    font-size: var(--fs-h3);
     font-weight: bold;
-    color: #bfbcb8;
+    color: var(--color-text);
     margin-bottom: 10px;    
     padding: 0;
     text-transform: uppercase;
@@ -73,18 +73,19 @@ header h1 {
 }
 
 .SecteurContent p span{
-    color: #e5b97d;
+    color: var(--color-accent);
 }
 
 .secteurCards{
     position: relative;
-    background: #333;
+    background: var(--color-surface-2);
     height: 60vh;
     max-height: 550px;
-    border-radius: 6px;
+    border-radius: var(--radius-lg);
     padding: 2rem;
-    color: #aaa;
-    box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+    color: var(--color-text-muted);
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(229, 185, 125, 0.2);
     overflow: hidden;
     margin: 20px auto;
     max-width: 300px;
@@ -109,7 +110,7 @@ header h1 {
 }
 
 .card__content h4 {
-    color: #bfbcb8;
+    color: var(--color-text);
     margin-top: 0;
     font-weight: 800;
     letter-spacing: 0.01em;
@@ -195,15 +196,15 @@ header h1 {
 
 .ProjectCards:hover img {
     transform: scale(1.1);
-    transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    filter: saturate(0);
+    transition: all 0.5s ease;
     -webkit-filter: saturate(0);
     -moz-filter: saturate(0);
     -o-filter: saturate(0);
     -ms-filter: saturate(0);
+    filter: saturate(0);
 }
 
 
@@ -248,8 +249,8 @@ header h1 {
     text-align: center;
     color: #bfbcb8;
     z-index: 10;
-    transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease ;
     -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }

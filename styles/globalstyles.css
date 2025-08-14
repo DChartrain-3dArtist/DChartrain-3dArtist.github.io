@@ -1,40 +1,86 @@
+:root {
+    /* Couleurs de thème */
+    --color-bg: #141414;
+    --color-surface: #212121;
+    --color-surface-2: #2a2a2a;
+    --color-text: #d2cec7;
+    --color-text-muted: #bfbcb8;
+    --color-accent: #e5b97d;
+    --color-accent-2: #f0c080;
+
+    /* Espacements */
+    --space-2xs: 4px;
+    --space-xs: 8px;
+    --space-sm: 12px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+    --space-3xl: 64px;
+
+    /* Rayons et ombres */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --shadow-sm: 0 2px 6px rgba(0,0,0,0.25);
+    --shadow-md: 0 6px 18px rgba(0,0,0,0.35);
+    --shadow-lg: 0 12px 30px rgba(0,0,0,0.45);
+
+    /* Typographie fluide */
+    --fs-h1: clamp(32px, 4vw, 48px);
+    --fs-h2: clamp(22px, 2.6vw, 32px);
+    --fs-h3: clamp(18px, 2.2vw, 24px);
+    --fs-body: 16px;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     font-family: "Anta", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #bfbcb8;
+    color: var(--color-text);
     box-sizing: border-box;
-    background-color: #141414;
+    background-color: var(--color-bg);
     scroll-behavior: smooth;
 }
 
 section {
     max-width: 1700px;
-    margin: 0px auto 40px auto !important;
+    margin: 0 auto var(--space-2xl) auto !important;
+    padding: 0 var(--space-lg);
 }
 
 header {
     max-width: 1700px;
-    margin: 0px auto 40px auto;
+    margin: 0 auto var(--space-xl) auto;
+    padding: 0 var(--space-lg);
 }
+
+/* Typographie de base (hors styles spécifiques par page) */
+h1 { font-size: var(--fs-h1); line-height: 1.15; color: var(--color-accent); margin: 0 0 var(--space-lg) 0; }
+h2 { font-size: var(--fs-h2); line-height: 1.2; margin: 0 0 var(--space-md) 0; }
+h3 { font-size: var(--fs-h3); line-height: 1.3; margin: 0 0 var(--space-sm) 0; }
+p { font-size: var(--fs-body); line-height: 1.7; }
+
+/* Liens par défaut dans le contenu */
+main a { color: var(--color-accent); }
 
 .sidebar {
     position: fixed;
     top: 0;
-    left: -320px; 
+    left: 0; /* Changé de -320px à 0 pour être visible par défaut */
     width: 300px;
     height: 100%;
-    background-color: #141414;
-    color: #bfbcb8;
+    background-color: var(--color-bg);
+    color: var(--color-text-muted);
     overflow-y: auto;
     padding: 20px;
     box-shadow:  9px 9px 17px #090909;
-    transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     z-index: 1000;
 }
 
@@ -43,7 +89,7 @@ header {
     font-weight: 800;
     margin-bottom: 20px;
     text-align: center;
-    border-bottom: 2px solid #e5b97d;
+    border-bottom: 2px solid var(--color-accent);
     padding-bottom: 10px;
 }
 
@@ -58,23 +104,23 @@ header {
 
 .sidebar ul li a {
     padding: 10px 30px;
-    color: #bfbcb8;
+    color: var(--color-text-muted);
     text-decoration: none;
     font-size: 1.2rem;
     cursor: pointer;
     font-weight: bold;
     border-bottom: 2px solid transparent;
-    transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 
 
 .sidebar ul li a:hover {
-    color: #e5b97d;
-    border-bottom: 2px solid #e5b97d;
+    color: var(--color-accent);
+    border-bottom: 2px solid var(--color-accent);
 }
 
 
@@ -93,6 +139,7 @@ header {
 }
 
 .menu-toggle-label {
+    display: none; /* Masqué par défaut sur PC */
     position: fixed;
     top: 15px;
     left: 15px;
@@ -102,15 +149,14 @@ header {
     background: #141414;
     box-shadow:  2px 2px 7px #090909,
              -2px -2px 7px #525252;
-    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     z-index: 1100;
-    transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .menu-toggle-label:hover {
@@ -122,10 +168,10 @@ header {
     height: 2px;
     background-color: #e5b97d;
     position: relative;
-    transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .hamburger::before,
@@ -136,10 +182,10 @@ header {
     background-color: #e5b97d;
     position: absolute;
     left: 0;
-    transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .hamburger::before {
@@ -156,35 +202,35 @@ header {
 
 
 .menu-toggle:checked ~ .menu-toggle-label>.hamburger::before {
-    transform: translateY(6px) rotate(45deg);
     -webkit-transform: translateY(6px) rotate(45deg);
     -moz-transform: translateY(6px) rotate(45deg);
     -o-transform: translateY(6px) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
 }
 
 .menu-toggle:checked ~ .menu-toggle-label>.hamburger::after {
-    transform: translateY(-6px) rotate(-45deg);
     -webkit-transform: translateY(-6px) rotate(-45deg);
     -moz-transform: translateY(-6px) rotate(-45deg);
     -o-transform: translateY(-6px) rotate(-45deg);
+    transform: translateY(-6px) rotate(-45deg);
 }
 
 main {
-    padding-left: 20px;
+    padding-left: 360px; /* Espace augmenté pour séparer le contenu du menu sur desktop */
 	-webkit-transform-origin: 100% 50%;
 	-moz-transform-origin: 100% 50%;
 	-ms-transform-origin: 100% 50%;
 	-o-transform-origin: 100% 50%;
 	transform-origin: 100% 50%;
-    transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
     box-shadow: -22px 0 15px rgba(0, 0, 0, 0.2);
     position: relative;
-    background: linear-gradient(45deg, #212121 70%, #2c2c2c);
+    background: linear-gradient(45deg, var(--color-surface) 70%, #2c2c2c);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -201,10 +247,10 @@ main::before {
     z-index: 500;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .menu-toggle:checked ~ .sidebar {
@@ -224,18 +270,18 @@ main::before {
 }
 
 .button {
-    padding: 15px 30px;
-    border: 2px solid #2c2c2c;
+    padding: 12px 24px;
+    border: 1px solid rgba(229, 185, 125, 0.25);
     background-color: #1a1a1a;
-    color: #bfbcb8;
+    color: var(--color-text);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
-    border-radius: 15px;
-    transition: all 0.5s ease;
+    border-radius: var(--radius-md);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    transition: all 0.3s ease;
     outline: none;
     position: relative;
     overflow: hidden;
@@ -259,10 +305,10 @@ main::before {
     box-shadow:  2px 2px 7px #090909,
                 -2px -2px 7px #525252;
     transform: scale(0);
-    transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .button:hover::after {
@@ -270,17 +316,16 @@ main::before {
 }
 
 .button:hover {
-    border-color: #666666;
+    border-color: rgba(229, 185, 125, 0.6);
     background: #292929;
-    color: #e5b97d;
+    color: var(--color-accent);
 }
 
 .separator {
     width: 80%;
     height: 2px;
-    background-color: #e5b97d;
-    margin-top: 20px;
-    margin: 20px auto;
+    background-color: var(--color-accent);
+    margin: var(--space-lg) auto;
 }
 
 .ContactContainer {
@@ -315,7 +360,7 @@ main::before {
 
 .RsMenu p {
     font-size: 0.8rem;
-    color: #bfbcb8;
+    color: var(--color-text-muted);
     text-align: center;
     margin: 0;
 }
@@ -330,8 +375,8 @@ main::before {
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
+    backdrop-filter: blur(5.5px);
     border: 1px solid rgba(255, 255, 255, 0.349);
     transform-style: flat;
     transition: all 0.5s ease;
@@ -417,7 +462,7 @@ footer {
 }
 
 footer p {
-    color: #bfbcb8;
+    color: var(--color-text-muted);
     font-weight: 400;
     font-size: 14px;
     margin: 0;
@@ -428,7 +473,7 @@ footer p {
     margin: 0;
     padding: 0;
     font-size: 12px;
-    color: #bfbcb8;
+    color: var(--color-text-muted);
     margin: 20px 20px;
     text-align: center;
 }
@@ -437,7 +482,7 @@ footer p {
     margin: 0;
     padding: 0;
     font-size: 12px;
-    color: #bfbcb8;
+    color: var(--color-text-muted);
     margin: 20px 20px;
     text-align: center;
 }
@@ -446,8 +491,134 @@ footer p {
     margin: 0;
     padding: 0;
     font-size: 12px;
-    color: #e5b97d;
+    color: var(--color-accent);
     margin: 20px 20px;
     text-align: center;
     text-decoration: none;
+}
+
+/* --- Bouton nouvelle version --- */
+.new-version-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.new-version-button {
+    display: block;
+    padding: 15px 20px;
+    background: linear-gradient(45deg, var(--color-accent), var(--color-accent-2));
+    color: #141414;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: var(--radius-md);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(229, 185, 125, 0.3);
+    text-align: center;
+}
+
+.new-version-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(229, 185, 125, 0.4);
+    background: linear-gradient(45deg, var(--color-accent-2), var(--color-accent));
+}
+
+/* --- Lien "Aller au contenu" pour l'accessibilité --- */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--color-accent);
+    color: #141414;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 10000;
+    font-weight: bold;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
+/* --- Page active dans le menu --- */
+.sidebar ul li a.active {
+    color: var(--color-accent);
+    border-bottom: 2px solid var(--color-accent);
+    background-color: rgba(229, 185, 125, 0.1);
+    border-radius: 5px;
+}
+
+/* Harmonisation des cartes visuelles */
+.secteurCards,
+.ContactCards,
+.ProjectCards,
+.projectProduct {
+    background: var(--color-surface-2);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(229, 185, 125, 0.2);
+}
+
+.secteurCards:hover,
+.ContactCards:hover,
+.ProjectCards:hover,
+.projectProduct:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* --- Support des préférences de réduction de mouvement --- */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Media queries pour la responsivité */
+@media (max-width: 1024px) {
+    .sidebar {
+        left: -320px; /* Menu caché par défaut sur tablette */
+    }
+    
+    .menu-toggle-label {
+        display: flex; /* Afficher le bouton hamburger sur tablette */
+    }
+    
+    main {
+        padding-left: 20px; /* Retirer le padding sur tablette */
+    }
+    
+    .menu-toggle:checked ~ .sidebar {
+        left: 0;
+    }
+    
+    .menu-toggle:checked ~ main {
+        -webkit-transform: translateX(-2em) perspective(600px) rotateY(-2deg);
+        -moz-transform: translateX(-2em) perspective(600px) rotateY(-2deg);
+        -ms-transform: translateX(-2em) perspective(600px) rotateY(-2deg);
+        -o-transform: translateX(-2em) perspective(600px) rotateY(-2deg);
+        transform: translateX(-2em) perspective(600px) rotateY(-2deg);
+    }
+    
+    .menu-toggle:checked ~ main::before {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        left: -320px; /* Menu caché par défaut sur mobile */
+    }
+    
+    .menu-toggle-label {
+        display: flex; /* Afficher le bouton hamburger sur mobile */
+    }
+    
+    main {
+        padding-left: 20px; /* Retirer le padding sur mobile */
+    }
 }
