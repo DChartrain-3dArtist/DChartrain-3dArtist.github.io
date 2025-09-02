@@ -84,3 +84,4 @@ Process-HtmlFiles -Directory $workspacePath
 
 Write-Host "`nTraitement terminé !" -ForegroundColor Green
 Write-Host "Le script d'accessibilité a été ajouté dans toutes les pages HTML appropriées." -ForegroundColor Green
+

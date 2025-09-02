@@ -88,3 +88,4 @@ Process-HtmlFiles -Directory $workspacePath
 
 Write-Host "`nTraitement terminé !" -ForegroundColor Green
 Write-Host "Tous les liens externes ont été corrigés avec rel='noopener noreferrer'." -ForegroundColor Green
+
